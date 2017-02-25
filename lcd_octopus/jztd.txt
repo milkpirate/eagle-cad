@@ -1,0 +1,12 @@
+Partlist
+
+Exported from untitled.brd at 08.03.2013 01:12:59
+
+EAGLE Version 6.1.0 Copyright (c) 1988-2012 CadSoft
+
+Assembly variant: 
+
+Part     Value           Package                     Library       Position (inch)       Orientation
+
+CN1                      DCJACK_2MM_PTH              adafruit      (3.275 1.15)          R90
+R8                       0207/10                     rcl           (1.8 1)               R90

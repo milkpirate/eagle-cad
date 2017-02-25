@@ -1,0 +1,43 @@
+v1.06 (20.04.2013)
+- Änderung beim RS-232-Empfang: einige Terminalprogramme senden nach
+  Deaktivieren der CTS-Leitung noch einige Bytes, die zu einem Pufferfehler
+  führen. Jetzt wird CTS bereits deaktiviert, wenn noch 10 Zeichen Platz im
+  Puffer sind
+- EEPROM-Typen ergänzt: 28C64B und 28C256
+
+v1.05 (28.06.2007)
+
+- Änderung bei der Baudraten-Einstellung, Voreinstellung ist jetzt 115200
+  Baud und zusätzlich wurde noch die Einstellung 9600 Baud ergänzt
+
+v1.04 (30.07.2005)
+
+- Unterstützung für das Intel HEX386 Format ergänzt, es werden jetzt beim
+  Programmieren und Vergleichen zusätzlich die "Extended Linear Address
+  Records" ausgewertet, so dass auch HEX386 Dateien zum Programmieren ver-
+  wendet werden können; beim Lesen werden die Daten aber wie bisher im
+  HEX86 Format ausgegeben
+
+v1.03 (12.01.2004)
+
+- Menüpunkt für Sprachumschaltung deutsch/englisch ergänzt, beide Sprachen
+  sind nun in einer einzigen Software enthalten
+- Fehler in der Programmier- und Löschroutine von 28F010/28F020 behoben
+- Anzeige der EPROM-Größe im Menü
+
+v1.02 (10.01.2004)
+
+- Menüaufbau geändert
+- Menüpunkt für Umschaltung des Lesemodus ergänzt
+- Flash-ROM-Typen ergänzt: 29F010B und 29F040B
+- Mit ESC kann man ein versehentlich aufgerufenes Untermenü ohne Änderung
+  wieder verlassen
+
+v1.01 (09.06.2003)
+
+- englische und deutsche Softwareversion verfügbar, sonst keine Änderungen
+  im Funktionsumfang
+
+v1.00 (31.10.2001)
+
+- erste veröffentlichte Version

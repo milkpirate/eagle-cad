@@ -1,0 +1,137 @@
+#==================
+# eagle cad
+#==================
+
+# eagle's automatic backups
+#==================
+*.s\#?
+*.s\#??
+*.s\#???
+
+*.b\#?
+*.b\#??
+*.b\#???
+
+*.epf
+*.lbr			# do not sync libraries
+
+# other/foreign files
+#==================
+.DS_Store
+*.zip
+*.rar
+*.tar.gz
+*.7z
+*.inf
+*.bak
+*.ps
+
+# binaries
+#==================
+*.exe
+*.bin
+*.elf
+*.hex
+*.o
+*.srec
+*.dll
+*.sys
+
+# other build byproducts
+#==================
+*.lst
+*.map
+
+# folders
+#==================
+BURN/
+\#NEW/
+lcd2usb/
+KATER/
+bauteiltester/
+cdc-232/
+Dice10-master/
+easy-logger/
+gameboy-prog/
+libusb-*/
+logic-analyzer/
+lunchbeat/lunchbeat-PCB-master/
+opencrypttoken\opencryptotoken/
+pic_programmer/
+pic_tengu2/
+snes-prog/
+thsusb/
+usb4all/
+
+# manage latex files (again)
+#==================
+*.aux
+*.glo
+*.idx
+*.log
+*.toc
+*.ist
+*.acn
+*.acr
+*.alg
+*.bbl
+*.blg
+*.dvi
+*.glg
+*.gls
+*.ilg
+*.ind
+*.lof
+*.lot
+*.maf
+*.mtc
+*.mtc1
+*.out
+*.synctex.gz
+*.w18
+
+#==================
+# atmel related
+#==================
+
+# binaries
+#==================
+*.exe
+*.bin
+*.elf
+*.hex
+*.o
+*.srec
+
+# other build byproducts
+#==================
+*.lst
+*.map
+
+# folder excludes
+#==================
+Documents/
+usbasp/
+usbloader
+
+#==================
+# esp8266 related
+#==================
+
+# binaries
+#==================
+*.exe
+*.bin
+
+# folders
+#==================
+Config/
+espLorer/
+Firmwares/
+LuaLoader/
+LuaSrcDiet*/
+nodemcu-uploader/
+nodemcu-httpserver*/
+thingspeaks_api/
+tmp/
+Web_TCP2UART/

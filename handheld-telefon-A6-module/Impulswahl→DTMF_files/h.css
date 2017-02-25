@@ -1,0 +1,156 @@
+body		{padding-top:1px;counter-reset:FIG TAB}		/* Platz für Inhaltsverzeichnis und Sprachauswahl */
+div		{overflow:hidden;}
+
+/* Überschriften */
+h1,h2,h3,h4	{-moz-border-radius:8px;border-radius:8px;overflow:hidden;}
+h1		{background:#E0E0E0;padding:2px 1em;counter-reset:H2}
+h2		{background:#E8E8E8;padding:2px 2em;counter-increment:H2;counter-reset:H3}
+h3		{background:#F0F0F0;padding:2px 3em;counter-increment:H3;counter-reset:H4}
+h4		{background:#F8F8F8;padding:2px 4em;counter-increment:H4}
+@media(min-width:600px) {	/* auf Desktops Zähler einblenden */
+ h2:before 	{content:counter(H2)". ";padding-right:0.5em}
+ h3:before	{content:counter(H2)"."counter(H3)". ";padding-right:0.5em}
+ h4:before	{content:counter(H2)"."counter(H3)"."counter(H4)". ";padding-right:0.5em}
+}
+@media (max-width:599px) {
+ h1		{font-size:150%;border:outset 2px #666}
+ h1:after	{padding-left:2em;font-size:50%;font-style:italic;color:gray}
+ h1:after	{content:"Mobil-Ansicht"}
+ h1:lang(en):after	{content:"small-screen view"}
+ h1,h2,h3,h4	{padding:2px 0.5em}
+}
+h5		{font-size:120%;overflow:hidden}	/* für Zwischenüberschriften */
+
+/* Bilder und Tabellen */
+h6		{margin:0;font-size:100%;font-style:italic;font-weight:normal;overflow:hidden}
+h6 i		{font-style:normal}			/* zurückschalten von <i> */
+figure,.fig,.tab	{text-align:center;margin:1em 0}	/* div class=fig - Zentriertes Bild mit Unterschrift */
+/* .fig img		{max-width:99%}	// Platz für Rand lassen */
+.tab		{overflow:auto}
+.fig h6,figure h6	{margin-top:4px;counter-increment:FIG}
+.tab h6		{margin-bottom:4px;counter-increment:TAB}
+@media(min-width:600px) {	/* auf Desktops Zähler einblenden */
+ .fig h6:before,figure h6:before	{content:"Bild "counter(FIG)": "}	/* für Bilder (zwecks Verzeichniserstellung) */
+ .fig:lang(en) h6:before,figure:lang(en) h6:before	{content:"Figure "counter(FIG)": "}
+ .tab  h6:before		{content:"Tabelle "counter(TAB)": "}	/* für Tabellen (zwecks Verzeichniserstellung) */
+ .tab:lang(en) h6:before	{content:"Table "counter(TAB)": "}
+}
+
+/* Mehrspaltiger Text */
+.mc	{-moz-column-width:500px;-moz-column-gap:40px;-moz-column-rule:1px solid black;-moz-hyphens:auto}	/* multi column for wide screens */
+
+/* Zeichenformate */
+.o	{text-decoration:overline}			/* overline	<span class=o>	*/
+.u	{border-bottom:1px gray dotted;text-decoration:none;vertical-align:-3%;cursor:help}	/* dotted underline for <u style=u title=explanation> */
+.g	{color:gray;}
+abbr[title]	{cursor:help}
+a[nohref]	{color:blue}
+.b	{transform:skew(16deg, 0deg)}
+pre	{background:#EEE;margin:10px;padding:5px;overflow:auto}	/* boxed code block */
+pre .p,pre dfn	{color:darkblue;}			/* preprocessor <span class=p>	*/
+pre .c,pre i	{color:darkgreen;}			/* comment	<i class=c>	*/
+pre .n,pre em	{color:#077;font-style:normal;}		/* number	<span class=n>	*/
+pre .k,pre b	{color:darkblue;font-weight:bold;}	/* keyword	<b class=k>	*/
+pre b.e		{font-style:italic;}			/* nonstandard keyword */
+pre .s,pre strong	{color:#707;font-weight:normal;}	/* string	<span class=s>	*/
+pre label		{color:darkred;}
+span.ln		{background:#E0E0E0;text-decoration:none;font-style:normal;color:black;}	/* Zeilennummern für Listings */
+code	{font-weight:bold;}				/* in opposite to <tt> */
+tt	{font-size:1.2em;}				/* otherwise too small at least on German Windows systems */
+li	{margin:0.5em 0;}				/* some space in bullet list */
+ul.tight, ul.tight li	{margin:0;}			/* keinen Platz lassen */
+ol.tight, ol.tight li	{margin:0;padding-left:1em;}
+dt		{margin:0.5em 0;}
+dt.faq		{margin:1em 0 0.5em 0;}			/* used for FAQ list */
+dt.faq:before	{content:url(/~heha/icons/frage.gif)" ";}
+dd.faq:before	{content:url(/~heha/icons/antwort.gif)" ";}
+
+/* Verschiedenes */
+a[href*="/g.cgi?"]::before	{content:url(icons/pdf.gif);padding-right:0.2em;vertical-align:top;text-decoration:none}
+/* a[href$=".zip"]::before	{content:url(/icons/compressed.gif);padding-right:0.2em;vertical-align:top;text-decoration:none} */
+a[href^="#"]	{color:green}	/* internes Sprungziel */
+a[href~="wikipedia"]::before	{content:url(icons/wikipedia.png);padding-right:0.2em;vertical-align:top;text-decoration:none;}
+a.lf::before	{content:"↓";padding:0 0.2em;margin-right:0.1em;background:#EEE;border:1px #888 solid;border-radius:3px;display:inline-block;}
+a.lb::before	{content:"↑";padding:0 0.2em;margin-right:0.1em;background:#EEE;border:1px #888 solid;border-radius:3px;display:inline-block;}
+img.prelink	{padding-right:0.2em;border:0;vertical-align:top;}
+							/* small in-document navigation box, <div class=nav {width=}> */
+.nav	{clear:right;float:right;padding:2px;margin:0 0.5em;border:1px solid #E0C0C0;
+	background:-moz-linear-gradient(top,#FFFFFF,#FFC0C0);
+	border-radius:5px;box-shadow:5px 5px 5px gray;font-size:small;
+	animation: slidein 2s;
+	-webkit-animation: slidein 2s;
+	/*animation-iteration-count:infinite;*/
+	/*animation-direction:alternate;*/
+	}
+
+@keyframes slidein {
+ from {transform:translateX(512px)skewX(30deg)}
+ to  {transform:none}
+}
+@-webkit-keyframes slidein {
+ from {transform:translateX(512px)skewX(30deg)}
+ to  {transform:none}
+}
+/* small in-document navigation box, <div class=nav {width=}> */
+
+/* Eingerahmter Text mit verschiedenen Hintergrundfarben */
+.box		{background:#EEE;padding:0.5em 1em;margin:1em;border:#888 1px solid;}		/* Gray notice box <blockquote class=box> */
+.redbox		{border:1px solid red;background:#FFF0F0;padding:0.5em 1em;margin:1em;border-radius:8px;box-shadow:0.5em 0.5em 0.5em gray;}
+.greenbox	{border:1px solid #C0FFC0;background:#F0FFF0;padding:0.5em 1em;margin:1em;border-radius:8px;box-shadow:0.5em 0.5em 0.5em gray;}
+.bluebox	{border:1px solid #C0C0FF;background:#F0F0FF;padding:0.5em 1em;margin:1em;border-radius:8px;box-shadow:0.5em 0.5em 0.5em gray;}
+.yellowbox	{border:2px solid #FFFF80;background:#FFFFE0;padding:0.5em 1em;margin:1em;border-radius:8px;box-shadow:0.5em 0.5em 0.5em gray;}
+.dos,pre.sh	{color:#CCC;background:#000;padding:0.5em;margin:0.5em;border:#CCC 0.5em ridge}	/* DOS box: <div … oder <pre class=dos> */
+
+/* Gestapelte Fotos */
+.roundbox	{border:1px black solid;padding:2px;text-align:left;-moz-border-radius:8px;border-radius:8px}	/* für MultiBild */
+label		{padding:1px}
+label:hover	{border:1px black dotted;padding:0px}
+img.pixelart	{image-rendering:-moz-crisp-edges;-ms-interpolation-mode:nearest-neighbor}	/* <img class=pixelart width=...> */
+kbd		{border:1px solid #ADB3B9;border-radius:3px;margin:0 0.1em;padding:0 0.2em;white-space:nowrap;display:inline-block;box-shadow:0 1px 0 rgba(12,13,14,0.2),0 0 0 2px #FFF inset;}
+
+aside,div.r	{font-size:smaller;font-style:italic;line-height:1.3em}	/* right-side floating box <div class=r style="width:30em"> */
+@media(min-width:600px) {
+ aside,div.r	{clear:right;float:right;border:solid 1px #CCC;padding:0.5em;margin:0.5em}	/* right-side floating box <div class=r style="width:30em"> */
+}
+@media (max-width:599px) {
+ aside,div.r		{max-width:100%}
+ aside img,div.r img	{max-width:100%}
+}
+a.hl	{color:#888;opacity:0.5;visibility:hidden;margin-left:0.5em;text-decoration:none}	/* headerlink (see wiki.ubuntuusers.de) */
+a.hl:hover	{opacity:1}
+h2:hover a.hl,h3:hover a.hl,h4:hover a.hl,dt:hover a.hl	{visibility:visible}
+a.nul:link,a.nul:visited	{text-decoration:none}		/* no-underline: Keine Unterstreichung von Links */
+
+/* Listen-Tabelle */
+table.list	{border-collapse:collapse;margin:0 auto}
+table.list th	{padding:2px 1em;background:#c0c0c0;}
+table.list th.l	{text-align:left}
+table.list td	{padding:2px 1em;text-align:center;}
+table.list td.l	{text-align:left} 
+
+/* Inhaltsverzeichnis zum Einblenden */
+#NavBar	{position:absolute;top:0px;right:0px;background:#FFF0F0;margin:0 0;border:1px solid #E0C0C0;font-weight:bold;opacity:0.9;padding:0 2px;cursor:pointer}
+#Nav	{position:absolute;top:0px;right:0px;background:#FFF0F0;margin:0 0;padding-right:2em;border:1px solid #E0C0C0;font-size:small;opacity:0.9;visibility:hidden;clip:auto}
+ol#Nav	{margin:0 0;}
+#Nav ol ol,#Nav ol ol ol	{padding-left:1em}
+#X	{position:absolute;top:2px;right:2px;color:gray;background:lightgray;padding:0 4px;border:2px solid gray;cursor:pointer;font:bold 1em Helvetica}
+#LangSel{position:absolute;top:0px;left:0px;background:#F0F0FF;margin:0 0;border:1px solid #C0C0E0;padding:0px 10px;}
+.slidein	{-webkit-animation:slidein 0.5s;animation:slidein 0.5s}
+
+/* Thumbnails (Voransichten) für Artikel-Listen, Popup wird von JavaScript behandelt */
+img.tn	{width:48px;height:48px}
+/* Gezoomte Kopie des Bildes als Overlay (wird per JavaScript instantiiert) */
+img.tnh	{
+ position:fixed;
+ width:auto;
+ height:auto;
+ display:block;
+ z-index:999;
+ border:2px solid rgba(255,255,255,0.8);
+ opacity:0;
+ transition:opacity 0.25s;
+}
+@keyframes fadein {
+ from{opacity:0;}
+ to  {opacity:1;}
+}

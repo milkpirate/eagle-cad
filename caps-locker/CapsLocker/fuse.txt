@@ -1,0 +1,1 @@
+-U lfuse:w:0xc1:m -U hfuse:w:0xDF:m -U efuse:w:0xFF:m 

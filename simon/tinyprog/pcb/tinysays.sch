@@ -1,0 +1,273 @@
+EESchema Schematic File Version 2  date Do 22 Sep 2011 14:56:15 CEST
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:special
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:tinysays
+EELAYER 43  0
+EELAYER END
+$Descr A4 11700 8267
+Sheet 1 1
+Title ""
+Date "22 sep 2011"
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Wire Wire Line
+	6800 1550 6800 1500
+Connection ~ 6450 3400
+Wire Wire Line
+	6450 3400 6450 3350
+Connection ~ 5750 3400
+Wire Wire Line
+	5750 3350 5750 3400
+Connection ~ 6450 1500
+Wire Wire Line
+	6450 1550 6450 1500
+Connection ~ 5750 1500
+Wire Wire Line
+	5750 1550 5750 1500
+Connection ~ 5350 3400
+Wire Wire Line
+	5350 3450 5350 3400
+Wire Wire Line
+	6800 2100 6800 2050
+Wire Wire Line
+	6100 2050 6100 2100
+Wire Wire Line
+	3950 2850 3800 2850
+Wire Wire Line
+	3800 2850 3800 2250
+Wire Wire Line
+	3800 2250 5350 2250
+Wire Wire Line
+	5350 2250 5350 2550
+Wire Wire Line
+	5350 2550 6800 2550
+Wire Wire Line
+	6100 2650 5200 2650
+Wire Wire Line
+	5200 2650 5200 2550
+Wire Wire Line
+	5200 2550 5150 2550
+Connection ~ 5750 2700
+Connection ~ 6100 2650
+Connection ~ 6450 2600
+Connection ~ 6800 2550
+Wire Wire Line
+	6800 2500 6800 2750
+Wire Wire Line
+	6100 2500 6100 2750
+Wire Wire Line
+	5750 2700 5500 2700
+Wire Wire Line
+	5750 2750 5750 2500
+Wire Wire Line
+	6450 2750 6450 2500
+Wire Wire Line
+	5150 2850 5500 2850
+Wire Wire Line
+	5500 2850 5500 2700
+Wire Wire Line
+	6450 2600 5300 2600
+Wire Wire Line
+	5300 2600 5300 2300
+Wire Wire Line
+	5300 2300 3900 2300
+Wire Wire Line
+	3900 2300 3900 2550
+Wire Wire Line
+	3900 2550 3950 2550
+Wire Wire Line
+	5750 2100 5750 2050
+Wire Wire Line
+	6450 2100 6450 2050
+Wire Wire Line
+	6800 3350 6800 3400
+Wire Wire Line
+	6800 3400 3900 3400
+Wire Wire Line
+	3900 3400 3900 2700
+Wire Wire Line
+	3900 2700 3950 2700
+Wire Wire Line
+	5250 2700 5250 1500
+Wire Wire Line
+	5250 2700 5150 2700
+Wire Wire Line
+	6100 1550 6100 1500
+Connection ~ 6100 1500
+Wire Wire Line
+	5250 1500 6800 1500
+Wire Wire Line
+	6100 3400 6100 3350
+Connection ~ 6100 3400
+Wire Wire Line
+	5350 1450 5350 1500
+Connection ~ 5350 1500
+$Comp
+L VCC #PWR1
+U 1 1 4E7B2806
+P 5350 1450
+F 0 "#PWR1" H 5350 1550 30  0001 C CNN
+F 1 "VCC" H 5350 1550 30  0000 C CNN
+	1    5350 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L SW_PUSH SW3
+U 1 1 4E7B2765
+P 6450 3050
+F 0 "SW3" H 6600 3160 50  0000 C CNN
+F 1 "SW_PUSH" H 6450 2970 50  0000 C CNN
+	1    6450 3050
+	0    1    1    0   
+$EndComp
+$Comp
+L R R3
+U 1 1 4E7B2764
+P 6450 1800
+F 0 "R3" V 6530 1800 50  0000 C CNN
+F 1 "330R" V 6450 1800 50  0000 C CNN
+	1    6450 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED D3
+U 1 1 4E7B2763
+P 6450 2300
+F 0 "D3" H 6450 2400 50  0000 C CNN
+F 1 "LED" H 6450 2200 50  0000 C CNN
+	1    6450 2300
+	0    1    1    0   
+$EndComp
+$Comp
+L LED D4
+U 1 1 4E7B2762
+P 6800 2300
+F 0 "D4" H 6800 2400 50  0000 C CNN
+F 1 "LED" H 6800 2200 50  0000 C CNN
+	1    6800 2300
+	0    1    1    0   
+$EndComp
+$Comp
+L R R4
+U 1 1 4E7B2761
+P 6800 1800
+F 0 "R4" V 6880 1800 50  0000 C CNN
+F 1 "330R" V 6800 1800 50  0000 C CNN
+	1    6800 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L SW_PUSH SW4
+U 1 1 4E7B2760
+P 6800 3050
+F 0 "SW4" H 6950 3160 50  0000 C CNN
+F 1 "SW_PUSH" H 6800 2970 50  0000 C CNN
+	1    6800 3050
+	0    1    1    0   
+$EndComp
+$Comp
+L SW_PUSH SW2
+U 1 1 4E7B275D
+P 6100 3050
+F 0 "SW2" H 6250 3160 50  0000 C CNN
+F 1 "SW_PUSH" H 6100 2970 50  0000 C CNN
+	1    6100 3050
+	0    1    1    0   
+$EndComp
+$Comp
+L R R2
+U 1 1 4E7B275C
+P 6100 1800
+F 0 "R2" V 6180 1800 50  0000 C CNN
+F 1 "330R" V 6100 1800 50  0000 C CNN
+	1    6100 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED D2
+U 1 1 4E7B275B
+P 6100 2300
+F 0 "D2" H 6100 2400 50  0000 C CNN
+F 1 "LED" H 6100 2200 50  0000 C CNN
+	1    6100 2300
+	0    1    1    0   
+$EndComp
+$Comp
+L GND #PWR2
+U 1 1 4E7B272E
+P 5350 3450
+F 0 "#PWR2" H 5350 3450 30  0001 C CNN
+F 1 "GND" H 5350 3380 30  0001 C CNN
+	1    5350 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED D1
+U 1 1 4E7B271D
+P 5750 2300
+F 0 "D1" H 5750 2400 50  0000 C CNN
+F 1 "LED" H 5750 2200 50  0000 C CNN
+	1    5750 2300
+	0    1    1    0   
+$EndComp
+$Comp
+L R R1
+U 1 1 4E7B2715
+P 5750 1800
+F 0 "R1" V 5830 1800 50  0000 C CNN
+F 1 "330R" V 5750 1800 50  0000 C CNN
+	1    5750 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L SW_PUSH SW1
+U 1 1 4E7B270F
+P 5750 3050
+F 0 "SW1" H 5900 3160 50  0000 C CNN
+F 1 "SW_PUSH" H 5750 2970 50  0000 C CNN
+	1    5750 3050
+	0    1    1    0   
+$EndComp
+$Comp
+L ATTINY10 U1
+U 1 1 4E7B26C9
+P 4550 2700
+F 0 "U1" H 4550 3000 60  0000 C CNN
+F 1 "ATTINY10" H 4550 2400 60  0000 C CNN
+	1    4550 2700
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC

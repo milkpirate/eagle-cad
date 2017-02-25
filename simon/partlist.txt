@@ -1,0 +1,24 @@
+Partlist
+
+Exported from simon_SMD.sch at 21.05.2013 23:48:45
+
+EAGLE Version 6.1.0 Copyright (c) 1988-2012 CadSoft
+
+Assembly variant: 
+
+Part     Value          Device          Package      Library      Sheet
+
+BAT1                    SN2032          SN2032       sn2032       1
+LED1                    LEDCHIP-LED0805 CHIP-LED0805 led          1
+LED2                    LEDCHIP-LED0805 CHIP-LED0805 led          1
+LED3                    LEDCHIP-LED0805 CHIP-LED0805 led          1
+LED4                    LEDCHIP-LED0805 CHIP-LED0805 led          1
+R1                      R-EU_M0805      M0805        rcl          1
+R2                      R-EU_M0805      M0805        rcl          1
+R3                      R-EU_M0805      M0805        rcl          1
+R4                      R-EU_M0805      M0805        rcl          1
+T1       EVQQ2          EVQQ2           EVQ-Q2       adafruit_t10 1
+T2       EVQQ2          EVQQ2           EVQ-Q2       adafruit_t10 1
+T3       EVQQ2          EVQQ2           EVQ-Q2       adafruit_t10 1
+T4       EVQQ2          EVQQ2           EVQ-Q2       adafruit_t10 1
+U$1      ATTINY10       ATTINY10        SOT23-6      adafruit_t10 1

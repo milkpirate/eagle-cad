@@ -1,0 +1,115 @@
+Cmp-Mod V01 Created by Cvpcb (2006-08-28) date = 20/9/2007-13:50:24
+
+BeginCmp
+TimeStamp = 46ED5904;
+Reference = C1;
+ValeurCmp = 27p;
+IdModule  = C1;
+EndCmp
+
+BeginCmp
+TimeStamp = 46ED5924;
+Reference = C2;
+ValeurCmp = 27p;
+IdModule  = C1;
+EndCmp
+
+BeginCmp
+TimeStamp = 46ED6EEB;
+Reference = C3;
+ValeurCmp = 100n;
+IdModule  = C2;
+EndCmp
+
+BeginCmp
+TimeStamp = 46F00DD6;
+Reference = C5;
+ValeurCmp = 10n;
+IdModule  = C2;
+EndCmp
+
+BeginCmp
+TimeStamp = 46ED71DB;
+Reference = D1;
+ValeurCmp = 3v6;
+IdModule  = D3;
+EndCmp
+
+BeginCmp
+TimeStamp = 46ED7229;
+Reference = D2;
+ValeurCmp = 3v6;
+IdModule  = D3;
+EndCmp
+
+BeginCmp
+TimeStamp = 46F00ABA;
+Reference = D3;
+ValeurCmp = LED;
+IdModule  = LEDV;
+EndCmp
+
+BeginCmp
+TimeStamp = 46ED580E;
+Reference = I1;
+ValeurCmp = ATMEGA8;
+IdModule  = TQFP32;
+EndCmp
+
+BeginCmp
+TimeStamp = 46ED6602;
+Reference = P1;
+ValeurCmp = USB-A;
+IdModule  = USB-A;
+EndCmp
+
+BeginCmp
+TimeStamp = 46EFE6C0;
+Reference = P2;
+ValeurCmp = ISP;
+IdModule  = pin_array_3x2;
+EndCmp
+
+BeginCmp
+TimeStamp = 46F27542;
+Reference = P3;
+ValeurCmp = PC0;
+IdModule  = 1pin;
+EndCmp
+
+BeginCmp
+TimeStamp = 46F27552;
+Reference = P4;
+ValeurCmp = PC1;
+IdModule  = 1pin;
+EndCmp
+
+BeginCmp
+TimeStamp = 46F2755D;
+Reference = P5;
+ValeurCmp = PC2;
+IdModule  = 1pin;
+EndCmp
+
+BeginCmp
+TimeStamp = 46F00AE4;
+Reference = R1;
+ValeurCmp = 1k;
+IdModule  = R3;
+EndCmp
+
+BeginCmp
+TimeStamp = 46F026A9;
+Reference = SW1;
+ValeurCmp = ACT;
+IdModule  = SIL-2;
+EndCmp
+
+BeginCmp
+TimeStamp = 46ED7938;
+Reference = X1;
+ValeurCmp = 12Mhz;
+IdModule  = HC-18UV;
+EndCmp
+
+EndListe

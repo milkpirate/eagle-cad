@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<!-- saved from url=(0085)https://www-user.tu-chemnitz.de/~heha/basteln/Haus/Telefon/Impulswahl%e2%86%92DTMF/#2 -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="date" content="2009-04-08">
+<link rel="next" href="https://www-user.tu-chemnitz.de/~heha/basteln/Haus/Telefon/Mith%C3%B6ren-analog/">
+<link rel="stylesheet" href="./Impulswahl→DTMF_files/h.css"> 
+<script src="./Impulswahl→DTMF_files/h.js"></script>
+<title>Impulswahl→DTMF</title>
+<meta name="viewport" content="width=device-width, initial-scale=1"></head><style type="text/css">embed[type*="application/x-shockwave-flash"],embed[src*=".swf"],object[type*="application/x-shockwave-flash"],object[codetype*="application/x-shockwave-flash"],object[src*=".swf"],object[codebase*="swflash.cab"],object[classid*="D27CDB6E-AE6D-11cf-96B8-444553540000"],object[classid*="d27cdb6e-ae6d-11cf-96b8-444553540000"],object[classid*="D27CDB6E-AE6D-11cf-96B8-444553540000"]{	display: none !important;}</style><body style="overflow-x: auto;"><div id="NavBar" style="visibility: visible;">Inhalt</div><div id="Nav" class="" style="visibility: hidden;"><div id="X" title="Inhaltsverzeichnis schließen">X</div><ol>
+<li><a href="https://www-user.tu-chemnitz.de/~heha/basteln/Haus/Telefon/Impulswahl%e2%86%92DTMF/#1">Telefon mit eingebautem MFV</a>
+<ol>
+<li><a href="https://www-user.tu-chemnitz.de/~heha/basteln/Haus/Telefon/Impulswahl%e2%86%92DTMF/#1.1">Schaltplan des Telefons „Variant“</a>
+</li><li><a href="https://www-user.tu-chemnitz.de/~heha/basteln/Haus/Telefon/Impulswahl%e2%86%92DTMF/#1.2">Mikrocontroller-Schaltung</a>
+</li><li><a href="https://www-user.tu-chemnitz.de/~heha/basteln/Haus/Telefon/Impulswahl%e2%86%92DTMF/#1.3">Firmware</a>
+</li><li><a href="https://www-user.tu-chemnitz.de/~heha/basteln/Haus/Telefon/Impulswahl%e2%86%92DTMF/#1.4">Aufbau</a>
+</li><li><a href="https://www-user.tu-chemnitz.de/~heha/basteln/Haus/Telefon/Impulswahl%e2%86%92DTMF/#1.5">Bedienungsanleitung</a>
+<ol>
+<li><a href="https://www-user.tu-chemnitz.de/~heha/basteln/Haus/Telefon/Impulswahl%e2%86%92DTMF/#1.5.1">Kapazität des Kurzwahl-Speichers</a>
+</li><li><a href="https://www-user.tu-chemnitz.de/~heha/basteln/Haus/Telefon/Impulswahl%e2%86%92DTMF/#1.5.2">Rufnummern-Sperre</a>
+</li><li><a href="https://www-user.tu-chemnitz.de/~heha/basteln/Haus/Telefon/Impulswahl%e2%86%92DTMF/#1.5.3">Kurzwahl-Vorprogrammierung</a>
+</li></ol>
+</li><li><a href="https://www-user.tu-chemnitz.de/~heha/basteln/Haus/Telefon/Impulswahl%e2%86%92DTMF/#1.6">Fragen am Rande</a>
+</li><li><a href="https://www-user.tu-chemnitz.de/~heha/basteln/Haus/Telefon/Impulswahl%e2%86%92DTMF/#1.7">Telefon W38 mit MFV</a>
+</li></ol>
+</li><li><a href="https://www-user.tu-chemnitz.de/~heha/basteln/Haus/Telefon/Impulswahl%e2%86%92DTMF/#2">Alternativen</a>
+</li></ol>
+</div>
+
+<h1>Impulswahl (IWV) nach Mehrfrequenzwahl (MFV) konvertieren</h1>
+
+Zum Betrieb von Retro-Telefonen (oftmals Wandtelefon) mit Wählscheibe, also
+<a href="http://de.wikipedia.org/wiki/IWV"><img src="./Impulswahl→DTMF_files/wikipedia.png" class="prelink" title="Wikipedia-Artikel">IWV = Impulswahlverfahren</a> auf
+<a href="http://de.wikipedia.org/wiki/Mfv"><img src="./Impulswahl→DTMF_files/wikipedia.png" class="prelink" title="Wikipedia-Artikel">MFV = Mehrfrequenzverfahren</a>
+(auch denglisch DTMF genannt), zum Betrieb an einer <i>zu</i> einfachen
+<a href="http://de.wikipedia.org/wiki/TK-Anlage"><img src="./Impulswahl→DTMF_files/wikipedia.png" class="prelink" title="Wikipedia-Artikel">Telekommunikationsanlage</a>
+(TK-Anlage, Haustelefon, Internet-Router).<p>
+
+<b>Hinweis:</b> Fritzboxen, aber auch mein Thomson-Kabelmodem,
+können mit Impulswahl umgehen.
+Wer einen solchen Internet-Router hat, braucht das nicht unbedingt,
+aber der zusätzliche Kurzwahl-Komfort ist ziemlich praktisch.
+
+</p><h2 style="display:flex" id="1">Telefon mit eingebautem MFV<a class="hl" href="https://www-user.tu-chemnitz.de/~heha/basteln/Haus/Telefon/Impulswahl%e2%86%92DTMF/#1">¶</a></h2>
+
+<div class="r" style="width:223px">
+<img src="./Impulswahl→DTMF_files/variant.jpg">
+</div>
+
+Hierbei geht es um die (unsichtbare) Umrüstung eines 
+DDR-Telefons „Variant“ mit Wählscheibe.<p>
+
+Dafür gibt es zwar Konverter, die man in die Telefonzuleitungen hängt,
+aber es sollten folgende Zusatzfunktionen realisiert werden:</p><ul>
+ <li>Programmierbare Kurzwahl (10 Nummern genügen)
+ </li><li>Wahlwiederholung
+ </li><li>Wählbarkeit von <code>'*'</code> und <code>'#'</code>
+ </li><li>Rufnummern-Filterung (festprogrammierte Regeln)
+</li></ul>
+
+<h3 id="1.1">Schaltplan des Telefons „Variant“<a class="hl" href="https://www-user.tu-chemnitz.de/~heha/basteln/Haus/Telefon/Impulswahl%e2%86%92DTMF/#1.1">¶</a></h3>
+
+Die im Innern befindliche Platine ist zwar mit gerade mal 8
+Bauelementen bestückt, aber dennoch derart unübersichtlich,
+dass ich hier erst mal einen Schaltplan mit
+lagerichtiger Kontaktanordnung erstellen musste.<p>
+
+Der grundsätzliche Schaltplan von Telefonen mit Wählscheibe ist stets
+gleich; hier ist es hervorragend erklärt: <a href="http://www.bayern-online.com/v2261/artikel.cfm/203/Standard-Telefon-611.html"><img src="./Impulswahl→DTMF_files/extern.gif" class="prelink" title="Externer Link">Fernsprecher W611</a>.
+Das Mikrofon ist normalerweise ein
+<a href="https://de.wikipedia.org/wiki/Kohlemikrofon"><img src="./Impulswahl→DTMF_files/wikipedia.png" class="prelink" title="Wikipedia-Artikel">Kohlegrieß-Mikrofon</a>.</p><p>
+
+</p><div class="fig">
+<a href="https://www-user.tu-chemnitz.de/~heha/basteln/Haus/Telefon/Impulswahl%e2%86%92DTMF/W38.zip/variant.wmf?bin=SVG" title="Vektorgrafik">
+<img src="./Impulswahl→DTMF_files/variant.png" border="1"></a>
+<h6>Schaltplan mit lagerichtigen Kontaktmessern</h6>
+</div>
+
+Wie man erahnen kann, ist es wesentlich leichter,
+die Wählscheibe vom Telefon zu trennen und dem Mikrocontroller
+zuzuordnen als einen Vorsatzkonverter zu bauen.<p>
+
+Von der „Amtsleitung“ (ein Kabelmodem) kommen ≈ 50&nbsp;V Leerlaufspannung.
+Bei abgehobenem Telefonhörer fällt diese auf unter 5&nbsp;V zusammen,
+und es fließen ≈ 40&nbsp;mA.
+Das ist schon ziemlich gefräßig.
+Somit kann man den Mikrocontroller gut <b>in Reihe</b> platzieren;
+Parallelschaltung ist eher unzweckmäßig. 
+
+</p><h3 id="1.2">Mikrocontroller-Schaltung<a class="hl" href="https://www-user.tu-chemnitz.de/~heha/basteln/Haus/Telefon/Impulswahl%e2%86%92DTMF/#1.2">¶</a></h3>
+
+Ausgangspunkt war Atmels Application Note <a href="http://www.atmel.com/Images/doc1982.pdf"><img src="./Impulswahl→DTMF_files/extern.gif" class="prelink" title="Externer Link">AVR314</a>.
+Es wurde auf einen ATtiny25 umgesetzt und der
+High-Speed-WPM-Generator im Zeitgeber 1 (mit 64&nbsp;MHz Taktfrequenz
+und ≈250&nbsp;kHz resultierender Trägerfrequenz) benutzt.
+Nur 2 Eingänge für den Nummernschaltkontakt und die
+Erd/Flash-Taste werden benötigt.
+Dadurch reicht der 8-beinige
+<a href="http://www.reichelt.de/?ARTICLE=69257"><img src="./Impulswahl→DTMF_files/einkauf.gif" class="prelink" title="Einkauf">ATtiny25</a>,
+und der <span class="o">RESET</span>-Eingang
+bleibt zur In-System-Programmierung frei
+(= kein Hochvolt-Programmiergerät erforderlich).
+
+<div class="fig">
+<a href="https://www-user.tu-chemnitz.de/~heha/basteln/Haus/Telefon/Impulswahl%e2%86%92DTMF/W38.zip/iwv-mfv.wmf?bin=SVG" title="Vektorgrafik">
+<img src="./Impulswahl→DTMF_files/ifv-mfv.png" border="1"></a>
+<h6>Schaltplan, zur <i>Reihenschaltung</i>. Die Bauelemente-Werte sind
+vollkommen unkritisch</h6>
+</div>
+
+Für die Tonerzeugung ist zwingend ein externer Resonator
+oder Quarz erforderlich; der interne Oszillator
+erwies sich als zu instabil.
+(Daher funktioniert <a href="https://www-user.tu-chemnitz.de/~heha/basteln/Haus/Telefon/Impulswahl%e2%86%92DTMF/W38.png">jene Schaltung</a> nicht.)
+Der Firmware-Quelltext läuft mit allem zwischen 8 und 20&nbsp;MHz.
+Weniger Megahertz wäre für eine präzise Tonausgabe ungünstig.
+Das erledigt Timer0, an dessen
+Interruptservice die <a href="https://de.wikipedia.org/wiki/Direct_Digital_Synthesis"><img src="./Impulswahl→DTMF_files/wikipedia.png" class="prelink" title="Wikipedia-Artikel">DDS</a>-Kurvenerzeugung „hängt“
+sowie die gesamte Eingangsdatenverarbeitung.
+Das Hauptprogramm (<code>main()</code>) schließlich schickt den Prozessor
+in den Schlafmodus oder schubst die nächste Tonausgabe an.<p>
+
+Die Mikrocontrollerschaltung liegt <b>in Reihe</b>
+zum Telefon. <a href="https://www-user.tu-chemnitz.de/~heha/basteln/Haus/Telefon/Impulswahl%e2%86%92DTMF/#1.6" class="lf" title="siehe unten">Siehe unten</a>.
+Das vereinfacht die Stromversorgung erheblich,
+denn eine 3,9-V-Zener-Diode <b>D1</b> parallel zu den
+Betriebsspannunganschlüssen des ATtiny45
+begrenzt die auftretende Spannung und sorgt für Verpolschutz sowie Sicherheit
+vor der Rufwechselspannung.
+
+</p><blockquote class="redbox">
+Außer für die CPU-belastende PWM-Tongenerierung genügt dem Controller
+eine wesentlich geringere Speisespannung von 1,8&nbsp;V.
+Dieser reduzierte Spannungs­abfall sorgt für mehr Rest­spannung am Telefon
+und damit für eine leicht bessere Sprach­qualität sowie mehr
+Klingel-Lautstärke als ohne so eine Maßnahme.
+Dazu könnte software­mäßig parallel zur Zener-Diode eine alte Leucht­diode
+geschaltet werden, wie <a href="https://www-user.tu-chemnitz.de/~heha/basteln/Haus/Telefon/Impulswahl%e2%86%92DTMF/W38.png">im alten Schaltplan</a> angegeben.
+Diese dient zugleich auch zur Betriebs­kontrolle (Anzeige des
+Schleifen­stroms).<br>
+<b>Leider erwies sich dieser Trick als Mikrocontroller-Töter!</b>
+Offenbar verträgt der ATtiny keine wechselnden Betriebs­spannungen.
+(Steht gar nicht im Datenblatt!)
+Das Symptom war, dass der Mikrocontroller abstürzte aber
+nach Reset wieder funktionierte,
+allerdings war er (via SPI) unprogrammierbar.
+So hatte ich eine Reihe Mikro­controller verschlissen.
+</blockquote>
+
+Die Anschlüsse für den Nummernschalter und die Erdtaste
+wurden freigemacht und zum Mikrocontroller verdrahtet.
+So gibt es keine Probleme mit irgendwelchen Potenzialverhältnissen.<p>
+
+Über die Drossel <b>L1</b> und den Kondensator <b>C5</b> wird schließlich
+das Tonwahlsignal als PWM auf die Telefonleitung gegeben.
+Solange keine Tonausgabe läuft ist der Mikrocontroller-Anschluss
+hochohmig und stört das Gespräch überhaupt nicht.
+
+</p><h3 id="1.3">Firmware<a class="hl" href="https://www-user.tu-chemnitz.de/~heha/basteln/Haus/Telefon/Impulswahl%e2%86%92DTMF/#1.3">¶</a></h3>
+
+Die Abkopplung des Nummernschaltkontaktes von der Amtsleitung ermöglicht
+eine komplette Neuzuweisung von Funktionen.
+Man könnte allen möglichen Blödsinn damit realisieren,
+etwa das Abspielen einer Tonfolge („Melodieklingel“) oder gar Sprache
+(„Sie Vollidiot haben sich verwählt!“ wenn Flash-Speicher des
+ Controllers groß genug) beim Wählen einer
+bestimmten Nummer oder so.
+Auch das Sperren von teuren Auslands- und Sonder­rufnummern fällt darunter.
+Natürlich auch ein Least-Cost-Router, den man allerdings zu Fuß
+aktualisieren muss.
+Heutige (2015) Telefonverträge machen sowas allerdings kaum noch attraktiv.<p>
+
+Die Funktion „Bei aufgelegtem Hörer wählen“ erfordert eine Schaltungsänderung
+oder -Erweiterung und wurde erst einmal verworfen.</p><p>
+
+Die Stromaufnahme der Testschaltung (bei 5&nbsp;V aus dem Labornetzteil)
+lag bei lastabhängigen 18&nbsp;mA bei Tonerzeugung
+sowie bei unter 1&nbsp;mA in Ruhe.
+Prinzipiell ließe sich die Stromaufnahme auf 1&nbsp;µA senken,
+wenn man Pin-Change-Interrupts benutzt und den Quarz abschaltet.
+Wegen der Reihenschaltung zum Telefon ist dies jedoch unsinnig
+und sogar kontraproduktiv,
+da sich beim Hörer auflegen der Kondensator <b>C1</b>
+zügig entleeren sollte.
+Wichtiger ist ein geringer Störnebel im ruhenden Betrieb.</p><p>
+
+Die minimale Speisespannung für den verwendeten Firmware-Quelltext beträgt 2,7&nbsp;V
+wegen der Verwendung des Zeitgebers 1&nbsp;im High-Speed-Modus (64&nbsp;MHz).
+Bei entsprechend abgesenkter Speise­spannung sinkt seine Strom­aufnahme
+sowie die Lautstärke der Pieptöne.
+Allerdings muss dann die Quarz­frequenz auf 10&nbsp;MHz abgesenkt werden.<br>
+Noch kleinere Speisespannungen bis herab zu 1,8&nbsp;V erfordern Änderungen:</p><ul class="tight">
+ <li>Der Zeitgeber 1 ist mit 32&nbsp;MHz zu betreiben, halbierte Trägerfrequenz
+ </li><li>Die maximale Quarzfrequenz ist 4&nbsp;MHz, und womöglich muss das Programm
+ erheblich geändert werden, um die Zeiten zu schaffen (mehr Assembler)
+</li></ul><p>
+
+Die <a href="https://www-user.tu-chemnitz.de/~heha/basteln/Haus/Telefon/Impulswahl%e2%86%92DTMF/W38.zip/mfv2/">Firmware</a> ist wie immer quelloffen
+und Freeware. Zudem deutsch kommentiert.
+Sie passt auch mühelos in den ATtiny25 (Füllgrad rund 60 %),
+da ist noch Platz für eigene Erweiterungen.
+Assembler-Routinen wurde nur für den geschwindigkeits-relevanten
+DDS-Generator verwendet, der Rest ist in C programmiert.
+
+</p><blockquote class="bluebox">
+Umständliche, frühere Schaltungsrealisierungen verwenden
+einen speziellem DTMF-Chip.
+Auch die Verwendung eines Mikrocontrollers mit zwei
+Rechteckgenerator-Ausgängen und anschließender Tiefpassfilterung
+und Summation erschien mir zu „unsportlich“,
+wie anderswo mit PIC gesehen (Link fehlt).<br>
+Schließlich gibt es heutzutage bereits Lösungen für Mikrocontroller,
+<a href="http://www.mikrocontroller.net/topic/92444#792954"><img src="./Impulswahl→DTMF_files/extern.gif" class="prelink" title="Externer Link">DTMF-Signale zu <i>dekodieren</i></a>,
+was für die Firmware deutlich anspruchsvoller ist.
+(<a href="http://dtmf.voipintouch.net/content/dtmf.htm"><img src="./Impulswahl→DTMF_files/extern.gif" class="prelink" title="Externer Link">Andere Lösung</a>)
+</blockquote>
+
+<h3 id="1.4">Aufbau<a class="hl" href="https://www-user.tu-chemnitz.de/~heha/basteln/Haus/Telefon/Impulswahl%e2%86%92DTMF/#1.4">¶</a></h3>
+
+Die wenigen Bauelemente passen auf ein Stück Lochrasterplatine.
+Nur beim Verdrahten muss man aufpassen, dass man nichts falsch anschließt
+oder mit dem Lötkolben das Telefongehäuse anschmurgelt.
+Leider hatte ich keine passenden Steckschuhe …
+
+<div class="fig">
+<img src="./Impulswahl→DTMF_files/iwv-mfv.jpg">
+<h6>Ansicht der Platine (C5 ist andersherum und C2 habe ich weggelassen.)</h6>
+</div>
+
+Ich hatte gerade keine <i>passende</i> Steckfassung,
+sondern Goldstaub aus DDR-Zeiten (passend zum Telefon eben).<p>
+
+Der Wert der Drossel ist total unkritisch.
+<i>Vor der Inbetriebnahme ist zu prüfen:</i></p><ul>
+<li>Ist die Z-Diode richtig herum? Sonst kann der Mikrocontroller sterben:
+ Beim Klingeln (Wechselspannung!) oder bei Falschpolung.
+</li><li>Sind die Elkos richtig herum?
+ Sonst explodieren sie nach einigen Minuten bis Tagen
+</li><li>Nach Anschluss des Telefons, bei <i>aufgelegtem</i> Hörer,
+ muss eine niederohmige Verbindung
+ zwischen <b>X2</b> und <b>X3</b> nachweisbar sein!
+ Sonst Gefahr für den Elko <b>C5</b> (zu hohe Spannung), den Mikrocontroller
+ (Stromstoß mit Überspannung) sowie Nichtfunktion.
+</li></ul>
+
+<h3 id="1.5">Bedienungsanleitung<a class="hl" href="https://www-user.tu-chemnitz.de/~heha/basteln/Haus/Telefon/Impulswahl%e2%86%92DTMF/#1.5">¶</a></h3>
+
+Wie sonst auch <i>muss</i> vor dem Bedienen der Hörer abgenommen werden.
+(Sonst fehlt der Schleifenstrom für den Mikrocontroller.)<p>
+
+<style><!--
+table.list td		{text-align:left;}
+table big,li big	{font-size:x-large;}
+.eng			{margin:0;}
+.big			{font-size:xx-large;color:darkgreen;}
+--></style>
+
+<script><!--
+function Wählscheibe(c) {
+ var dc=c.getContext("2d");
+ dc.scale(c.width/100,c.height/100);
+ dc.translate(50,50);
+ dc.lineWidth=5;
+ circle(dc,0,0,45);
+ for (i=1; i<=10; i++) {
+  var w=Math.PI*(i+1.5)/7;
+  var r=30;
+  circle(dc,r*Math.cos(w),-r*Math.sin(w),5);
+ }
+ dc.beginPath();
+ dc.moveTo(48,20);
+ dc.lineTo(40,32);
+ dc.lineTo(18,15);
+ dc.lineTo(22,8);
+ dc.closePath();
+ dc.fill();
+ dc.stroke();
+}
+
+function Erdkugel(c) {
+ var dc=c.getContext("2d");
+ dc.scale(c.width/100,c.height/100);
+ dc.translate(50,50);
+ dc.lineWidth=5;
+ var R=45;
+ circle(dc,0,0,R);
+ dc.lineWidth=3;
+ line(dc,0,-R,0,R);
+ line(dc,-R,0,R,0);
+ dc.beginPath();
+ var l1=R;
+ var l2=30;
+ var a=Math.atan2(l1,l2);
+ var r=Math.sqrt(l1*l1+l2*l2);
+ dc.arc( l2,0,r,Math.PI-a,Math.PI+a);
+ dc.arc(-l2,0,r,-a,a);
+ dc.stroke();
+ var h=80;
+ var b=Math.PI*0.22;	// geografische Breite am Rand (nicht ganz 45°)
+ l1=R*Math.cos(b);
+ l2=h-R*Math.sin(b);
+ a=Math.atan2(l1,l2);
+ r=Math.sqrt(l1*l1+l2*l2);
+ dc.beginPath();
+ dc.arc(0,-h,r,Math.PI*0.5-a,Math.PI*0.5+a);
+ dc.stroke();
+ dc.beginPath();
+ dc.arc(0, h,r,Math.PI*1.5-a,Math.PI*1.5+a);
+ dc.stroke();
+}
+
+function conv() {
+// Seit 2016: Nicht mit InnerHTML-Ersetzung arbeiten, sondern auf DOM-Ebene
+// Durchsuch-Bereich eingrenzen
+ var div=document.getElementById("rep");
+// Die <big>s suchen/ersetzen
+ for(var i=0;;) {				// for (i in bigs) geht nicht!!
+  var bigs=div.getElementsByTagName("big");	// neu suchen
+  if (!bigs || bigs.length<=i) break;		// am Ende angekommen
+  var big=bigs[i];
+  var painter=null;
+  switch (big.innerHTML) {
+   case "☎": painter=Wählscheibe; break;
+   case "♁": painter=Erdkugel; break;
+   default: i++;				// nicht zutreffende überspringen
+  }
+  if (painter) {
+   var c=document.createElement("canvas");	// Jedes Bild braucht ein extra DOM-Element
+   c.width=20;
+   c.height=20;
+   painter(c);					// Jedes Bild muss einzeln ausgemalt werden
+   big.parentNode.replaceChild(c,big);
+  }
+// Es funktioniert nicht, die <canvas>-Elemente vorher zu produzieren, auszumalen
+// und mit cloneNode zu vervielfältigen (Firefox): Die Kopien bleiben dann leer.
+ }
+}
+
+// Nur bei Canvas-Unterstützung!
+if (window.HTMLCanvasElement) setTimeout(conv,1000);
+//--></script>
+
+</p><div id="rep">
+
+Folgende Symbolik verdeutlicht die Tastendrücke:<ul>
+ <li class="eng"><canvas width="20" height="20"></canvas> = Erd-Taste drücken oder gedrückt halten (das ist die eine Taste am Telefon, die sonst nie benutzt wurde)
+ </li><li class="eng"><canvas width="20" height="20"></canvas> = Wählscheibe betätigen und Ziffer bzw. Rufnummer wählen
+ </li><li class="eng"><big>♪</big> = Es erfolgt eine Sinustonausgabe zur Kontrolle;
+  dieser unterscheidet sich deutlich von den
+  <a href="http://de.wikipedia.org/wiki/Dissonanz"><img src="./Impulswahl→DTMF_files/wikipedia.png" class="prelink" title="Wikipedia-Artikel">dissonanz</a>behafteten
+  Wähltönen
+</li></ul>
+<big class="big">✁</big>
+
+<table border="" class="list">
+ <tbody><tr><th colspan="2">Ein-Finger-Bedingung
+ </th></tr><tr><th>Wählen</th><td>
+  <canvas width="20" height="20"></canvas> Rufnummer (wie gehabt)
+ </td></tr><tr><th>Kurzwahl</th><td>
+  <canvas width="20" height="20"></canvas> Erde <i>kurz</i> drücken <big>♪</big> —
+  <canvas width="20" height="20"></canvas> Ziffer
+ </td></tr><tr><th>Kurzwahl speichern</th><td>
+  <canvas width="20" height="20"></canvas> Erde <i><abbr title="bis ein tieferer Ton zu hören ist">lang</abbr></i> drücken <big>♪</big> —
+  <canvas width="20" height="20"></canvas> Rufnummer <big>♪</big> —
+  <canvas width="20" height="20"></canvas> Erde <i>kurz</i> drücken <big>♪</big> —
+  <canvas width="20" height="20"></canvas> Ziffer <big>♪</big>
+ </td></tr><tr><th colspan="2">Zwei-Finger-Bedingung
+  (Erde und Wählscheibe gleichzeitig, zumindest am Sequenzbeginn)
+ </th></tr><tr><th>Wahlwiederholung</th><td>
+  <canvas width="20" height="20"></canvas> Erde +
+  <canvas width="20" height="20"></canvas> <b>1</b> (dann Erde loslassen)
+ </td></tr><tr><th>Zuletzt gewählte Nummer speichern</th><td>
+  <canvas width="20" height="20"></canvas> Erde +
+  <canvas width="20" height="20"></canvas> <b>2</b> —
+  <canvas width="20" height="20"></canvas> Ziffer (Piep)
+ </td></tr><tr><th>Kurzwahl speichern (wie oben)</th><td>
+  <canvas width="20" height="20"></canvas> Erde +
+  <canvas width="20" height="20"></canvas> <b>3</b> —
+  <canvas width="20" height="20"></canvas> Rufnummer <big>♪</big> —
+  <canvas width="20" height="20"></canvas> Erde (kurz) <big>♪</big> —
+  <canvas width="20" height="20"></canvas> Ziffer <big>♪</big>
+ </td></tr><tr><th><big>A..D</big> wählen</th><td>
+  <canvas width="20" height="20"></canvas> Erde +
+  <canvas width="20" height="20"></canvas> <b>4..7</b> (experimentell)
+ </td></tr><tr><th><big>*</big> wählen</th><td>
+  <canvas width="20" height="20"></canvas> Erde +
+  <canvas width="20" height="20"></canvas> <b>8</b>
+ </td></tr><tr><th><big>#</big> wählen</th><td>
+  <canvas width="20" height="20"></canvas> Erde +
+  <canvas width="20" height="20"></canvas> <b>9</b>
+ </td></tr><tr><th>Letzte Rufnummer löschen</th><td>
+  <canvas width="20" height="20"></canvas> Erde +
+  <canvas width="20" height="20"></canvas> <b>0</b>
+</td></tr></tbody></table>
+<big class="big">✃</big><p>
+
+Alle Programmierungen und Funktionen lassen sich „mittendrin“
+durch Betätigen der Hörergabel oder Auflegen des Hörers abbrechen.
+</p></div>
+
+Im Gegensatz zu „normalen“ analogen Tastentelefonen
+vergisst diese Schaltung die eingespeicherten Nummern <i>nicht</i>
+bei Stromausfall oder Abziehen der Telefonleitung!
+Eine Batteriestütze <abbr title="oder ähnlich">o. ä.</abbr>
+ist daher nicht erforderlich.
+
+<h4 id="1.5.1">Kapazität des Kurzwahl-Speichers<a class="hl" href="https://www-user.tu-chemnitz.de/~heha/basteln/Haus/Telefon/Impulswahl%e2%86%92DTMF/#1.5.1">¶</a></h4>
+
+Diese ist an die EEPROM-Größe von 128 Byte eines ATtiny25 optimal angepasst:
+Wahlwiederholungs- und Kurzwahlspeicher sind für 22 Ziffern ausgelegt.
+Beim ATtiny25 (statt ATtiny45) stehen für die Kurzwahl auf Ziffer "0"
+nur 14 Ziffern zur Verfügung; bei mehr gibt es eine (unabgefangene)
+Kollision mit dem Speicher für Wahlwiederholung.
+
+<h4 id="1.5.2">Rufnummern-Sperre<a class="hl" href="https://www-user.tu-chemnitz.de/~heha/basteln/Haus/Telefon/Impulswahl%e2%86%92DTMF/#1.5.2">¶</a></h4>
+
+Die vorliegende, für
+<a href="http://de.wikipedia.org/wiki/IP-Telefonie"><img src="./Impulswahl→DTMF_files/wikipedia.png" class="prelink" title="Wikipedia-Artikel">VoIP</a> in Deutschland
+gemachte Firmware sperrt folgende Rufnummern:
+<table border="" class="list">
+<tbody><tr><th>Führende Ziffern</th><th>Bedeutung
+</th></tr><tr><td>00</td><td>Ausland
+</td></tr><tr><td>01</td><td>Dienste (0180), Handys, Call-By-Call
+</td></tr><tr><td>070</td><td>Private Nummern (nie gesehen)
+</td></tr><tr><td>090</td><td>Premium-Dienste (0900)
+</td></tr><tr><td>118</td><td>Telefonauskunft
+</td></tr></tbody></table>
+Werden diese Ziffern am Anfang gewählt, ertönt ein Dauerton
+(„Todespiep“), der nur durch Auflegen des Hörers beendet werden kann,
+folgende Wählversuche werden abgewiesen.<p>
+
+Der Filter lässt sich durch mindestens folgende Tricks überlisten:</p><ul>
+ <li>Durch Einspeichern und Wiedergabe einer Kurzwahl
+  (beabsichtigtes Verhalten).
+ </li><li>Durch Vorwahl von <b>A..D</b>
+  (weil von den meisten Telefonanlagen ignoriert).
+</li></ul>
+
+<h4 id="1.5.3">Kurzwahl-Vorprogrammierung<a class="hl" href="https://www-user.tu-chemnitz.de/~heha/basteln/Haus/Telefon/Impulswahl%e2%86%92DTMF/#1.5.3">¶</a></h4>
+
+Die Kurzwahl-Nummern können auch durch eine EEPROM-Datei befüllt werden.
+(Man muss sie nicht mit der Wählscheibe eingeben,
+ wenn man schon ein Programmiergerät besitzt.)<p>
+
+Der Aufbau ist simpel:
+</p><pre class="c"> EEMEM <b>struct</b>{
+  BYTE len;		<i>// Länge der Nummer: 0..22</i>
+  BYTE data[<em>11</em>];	<i>// 22 (BCD-)Ziffern, A-D, "*"=14, "#"=15</i>
+ }pre[]={
+  {<em>0</em>},					<i>// Wahlwiederholung (hier: leer)</i>
+  {<em>11</em>,{<em>0x03</em>,<em>0x71</em>,<em>0x33</em>,<em>0x96</em>,<em>0x01</em>,<em>0x80</em>}},	<i>// Kurzwahl "1" = 0371&nbsp;3396018, absichtlich in "lesbarer" Folge</i>
+  {<em>12</em>,{<em>0x01</em>,<em>0x76</em>,<em>0x21</em>,<em>0x69</em>,<em>0x56</em>,<em>0x71</em>}},	<i>// Kurzwahl "2" = 0176&nbsp;21695671</i>
+ };					<i>// usw. bis zur Kurzwahl "0"</i>
+</pre>
+
+<h3 id="1.6">Fragen am Rande<a class="hl" href="https://www-user.tu-chemnitz.de/~heha/basteln/Haus/Telefon/Impulswahl%e2%86%92DTMF/#1.6">¶</a></h3>
+
+<dl>
+<dt>Was passiert wenn man die <b>a</b> und <b>b</b>-Ader vertauscht?
+</dt><dd>Der Mikrocontroller wird durch die Z-Diode <b>D1</b> vor
+ Falschpolung geschützt, allerdings kann man mit dem Telefon
+ nur noch Rufe entgegennehmen, da die Wählfunktion nicht funktioniert.
+ Also richtig herum anschließen.
+<br>Standardmäßig ist <b>a</b> negativ, <b>b</b> positiv,
+ und der Gabelumschalter des Telefons ist am <b>a</b>-Anschluss.
+ Ist das nicht der Fall, sollte vorzugsweise der Installationsfehler
+ beseitigt werden.
+<br>Bei Kabelmodems werden die -60&nbsp;V üblicherweise mit einem
+ <a href="https://de.wikipedia.org/wiki/Inverswandler"><img src="./Impulswahl→DTMF_files/wikipedia.png" class="prelink" title="Wikipedia-Artikel">Inverter</a>
+ aus der Speisespannung (bspw. 12&nbsp;V) generiert,
+ daher liegt <b>b</b> auf Erdpotenzial, also Antennenschirm.
+ Beim <abbr title="oben angegebenen">o.a.</abbr> Anschluss (Schaltplan)
+ sind daher keine berührgefährlichen Spannungen zu erwarten.
+
+</dd><dt>Was passiert wenn man <b>b-amt</b> mit <b>b-tel</b> verwechselt?
+</dt><dd>Die Tonausgabe hat falschen Massebezug!
+ Gefahr für Mikrocontroller-Ausgang <b>PB1</b>!
+ Kontrolle: An <b>X2</b> muss das andere Ende vom Mikrofon liegen.
+
+ <div class="fig">
+ <a href="https://www-user.tu-chemnitz.de/~heha/basteln/Haus/Telefon/Impulswahl%e2%86%92DTMF/W38.zip/polung.wmf?bin=SVG" title="Vektorgrafik">
+ <img src="./Impulswahl→DTMF_files/polung.png" border="1"></a>
+ <h6>Die beiden möglichen Anschluss-Szenarien.
+  Der Gabelschalter muss von der Mikrocontrollerschaltung <i>abgewandt</i>
+  sein</h6>
+ </div>
+
+ Liegt das Mikrofon an <b>X1</b>, muss <b>C5</b> umgepolt werden.
+ Liegt das Mikrofon weder an <b>X1</b> noch an <b>X2</b>,
+ muss man die <b>a</b>-Ader anzapfen. Hängt vom Telefon ab.<br>
+ Beim Anschluss ans Mikrofon ist das Tonsignal leise im Hörer
+ zu hören; beim Anschluss ans Spulenende dagegen ziemlich laut.
+ Ausprobieren, wie's gefällt!
+ Gegebenenfalls einen Serienwiderstand verwenden.
+ Der Anschluss am Mikrofon ist zu bevorzugen an echten Telefonanschlüssen
+ (= lange Analogleitungen zum Amt), weil diese  Anschlussart
+ besser vor Überspannungsspitzen bei Blitzschlag schützt.
+
+</dd><dt>Der Quarz ist beliebig?
+</dt><dd>Ja, in Grenzen, 8..20&nbsp;MHz;
+ allerdings muss man dann das Makefile anpassen
+ und die Quelle neu übersetzen; die beigefügte Hex-Datei
+ geht dann natürlich nicht.
+ Die Hex-Datei ist für die NTSC-Quarzfrequenz 14318,18&nbsp;kHz erstellt,
+ bei anderen Quarzen kommen schlichtweg falsche Töne und Zeiten heraus.
+ Laut Datenblatt (Bild 21-2) muss für diese Frequenz die Speisespannung 3,5&nbsp;V betragen.
+ Die AVR-Mikrocontroller sind jedoch extrem robust bezüglich Übertaktung.
+
+</dd><dt>Was passiert, wenn die Stromaufnahme des Telefons
+ kleiner ist als die des Mikrocontrollers?
+</dt><dd>Das dürfte sich im Abschwächen oder gar Abreißen der Tonausgabe
+ bemerkbar machen, weil (nur) dann die Spannung aus <b>C1</b>
+ zusammenbricht.
+ Schlimmstenfalls muss man die Stromaufnahme des Telefons mit einem
+ Widerstand oder besser einer Stromquelle (Transistorschaltung) vergrößern.
+</dd></dl>
+
+<h3 id="1.7">Telefon W38 mit MFV<a class="hl" href="https://www-user.tu-chemnitz.de/~heha/basteln/Haus/Telefon/Impulswahl%e2%86%92DTMF/#1.7">¶</a></h3>
+
+Natürlich funktioniert die o.a. Schaltung auch für ein W38.
+
+
+<h2 id="2">Alternativen<a class="hl" href="https://www-user.tu-chemnitz.de/~heha/basteln/Haus/Telefon/Impulswahl%e2%86%92DTMF/#2">¶</a></h2>
+
+<ul>
+ <li>Aus der Niederlande mit
+  <a href="http://www.picbasic.nl/dtmf-telefoon_de.htm"><img src="./Impulswahl→DTMF_files/extern.gif" class="prelink" title="Externer Link">PIC12F629</a>,
+   deutsch übersetzt
+ </li><li><a href="http://www.mikrocontroller.net/topic/137683"><img src="./Impulswahl→DTMF_files/extern.gif" class="prelink" title="Externer Link">Mit ATmega16</a>,
+  basierend auf <a href="http://www.atmel.com/atmel/acrobat/doc1982.pdf"><img src="./Impulswahl→DTMF_files/extern.gif" class="prelink" title="Externer Link">ATMEL-Anwenderinformation</a>
+</li></ul>
+
+Mehr Komfort bietet eine Lösung, die:<ul class="tight">
+ <li>Das Wählen bei aufgelegtem Hörer ermöglicht
+ </li><li>Die gewählte Rufnummer anzeigt; erfordert numerisches Display
+ </li><li>Die eingehende Rufnummer anzeigt (CLIP); erfordert numerisches Display
+ </li><li>Die eingehende Rufnummer mit einem Namen verknüpft;
+  erfordert alphanumerisches Display (sowie Tastatur oder Terminal,
+  im einfachsten Fall einen steckbaren Mikrocontroller
+  und Neuprogrammierung mit dem Telefonbuch bei Änderung)
+ </li><li>Eingehende DTMF-Signale dekodiert (falls die Gegenstelle Tasten drückt)
+ </li><li>Freisprechen ermöglicht
+ </li><li>Anrufbeantworter-Funktion (auf Flash-Speicher) erledigt
+</li></ul>
+Und das alles ohne zusätzliche Stromversorgung.
+Aber für ein Retro-Telefon geht das bestimmt zu weit …<p>
+
+Frage: <i>Kann die o.a. Firmware auf einen größeren Mikrocontroller,
+etwa einem ATmega328 auf einem Arduino Uno umgesetzt werden?</i></p><p>
+
+Antwort: Die o.a. Firmware ist extra dazu gemacht, in einen
+ATtiny25 gequetscht zu werden.
+Diese verwendet den High-Speed-Timer mit 64&nbsp;MHz Taktfrequenz,
+der im ATmega328 gar nicht enthalten ist.
+Will man ohne High-Speed-Timer arbeiten, reduziert sich die Trägerfrequenz
+von 250&nbsp;kHz auf bspw. 31&nbsp;kHz, und der Filteraufwand steigt womöglich.
+Außerdem verwendet die Firmware viele Register,
+was bei einem großen Mikrocontroller wenig sinnvoll ist,
+weil man mit diesem auch noch andere Aufgaben erledigen will.
+Die Verwendung von Registern beißt sich zudem mit einigen Routinen
+der C-Standardbibliothek von avr-gcc, welche ein globales
+Register-Push eincompiliert haben, etwa <code>rand()</code>.
+Bei einem größeren Controller steigt auch der Aufwand,
+Interruptbehandlungsroutinen mit hoher Aufruffrequenz
+(hier: die DDS-Routine) sicher ausführen zu lassen,
+da andere Teilprogramme Interrupts sperren können;
+man muss die <i>volle Kontrolle über den gesamten Quelltext</i> behalten.
+Das ist nichts für Skript-Kiddies, die nicht wissen,
+was sie da gerade zusammenklicken.
+Der Einsatz des Arduino-Frameworks verbietet sich zudem von selbst.</p><p>
+
+
+</p><div class="r"><a href="https://www-user.tu-chemnitz.de/~heha/basteln/Haus/Telefon/Mith%C3%B6ren-analog/">Nächster Artikel (Mithören-analog)</a> &nbsp; <a href="https://www-user.tu-chemnitz.de/~heha/basteln/Haus/Telefon/">Übergeordnetes Verzeichnis (Telefon)</a></div><hr><address><a href="https://www-user.tu-chemnitz.de/~heha/basteln/Haus/Telefon/Impulswahl%e2%86%92DTMF/email?Impulswahl%E2%86%92DTMF">Henrik Haftmann</a>, erstellt: 8. April 2009 — letzte Änderung: 28. Juli 2016</address></body></html>

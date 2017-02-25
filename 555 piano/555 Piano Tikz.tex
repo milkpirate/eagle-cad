@@ -1,0 +1,91 @@
+\tikzset{
+  foo/.style={color=#1},
+  foo/.default=black, % If no argument is given then this kicks in as argument.
+  bar/.style={foo/.append style={#1}}
+}
+
+\begin{tikzpicture}[x=10cm,y=7cm]
+\fill [black] (0,0) rectangle (1,1);
+
+\begin{scope}[line width=0.14cm]
+
+\def\padhight{.3}
+\def\mid{\padhight}
+\def\top{\mid+\padhight}
+
+\def\solderspace{.5-\padhight}
+\def\topp{\top+\solderspace}
+\def\toppp{\topp+\solderspace}
+
+\draw[foo,white] (0,\mid) -- (1,\mid);
+
+\def\interval{1/7}
+\def\offset{0}
+\foreach \x in {1,2,3,4,5,6}
+	{
+ 	\draw[foo,white] (\offset+\interval*\x,0) -- (\offset+\interval*\x,\mid);
+	}
+
+\def\interval{.96/6}
+\def\offset{.02}
+\def\halfwidth{.01}
+\foreach \x in {1,2,3,4,5}
+	{
+ 	\draw[foo,black] (\offset+\interval*\x+\halfwidth,\mid) -- (\offset+\interval*\x-\halfwidth,\mid);
+	}
+	
+% \draw[foo,black] (0,\mid) -- (2*\halfwidth,\mid);
+% \draw[foo,black] (1-2*\halfwidth,\mid) -- (1,\mid);
+
+\draw[foo,black] (0,\mid) -- (.02,\mid);
+\draw[foo,black] (1-.02,\mid) -- (1,\mid);
+\draw[foo,white] (.02,\top) -- (1-.02,\top);
+
+\def\shiftabit{-.017}
+\foreach \x in {1,2,3,4,5}
+	{
+ 	\draw[foo,white] (\shiftabit+\offset+\interval*\x,\mid) -- (\shiftabit+\offset+\interval*\x,\top);
+	}
+	
+\def\shiftabit{.017}
+\foreach \x in {1,2,3,4,5}
+	{
+ 	\draw[foo,white] (\shiftabit+\offset+\interval*\x,\mid) -- (\shiftabit+\offset+\interval*\x,\top);
+	}
+
+\def\shiftabit{.007}
+\draw[foo,white] (.02+\shiftabit,\mid) -- (.02+\shiftabit,\top);
+
+\def\shiftabit{-.027}
+\draw[foo,white] (1+\shiftabit,\mid) -- (1+\shiftabit,\top);
+
+\def\interval{.96/6}
+\def\offset{.02}
+\def\halfwidth{.01}
+\foreach \x in {1,2,3,4,5}
+	{
+ 	\draw[foo,black] (\offset+\interval*\x+\halfwidth,\top) -- (\offset+\interval*\x-\halfwidth,\top);
+	}
+
+\def\interval{.96/12}
+\def\offset{.02}
+\def\halfwidth{.01}
+\foreach \x in {1,3,5,7,9,11}
+	{
+ 	\draw[foo,black] (\offset+\interval*\x+\halfwidth,\top) -- (\offset+\interval*\x-\halfwidth,\top);
+	}
+
+\draw[foo,white] (0,\topp) -- (1,\topp);
+
+\def\interval{1/13}
+\def\offset{0}
+\foreach \x in {1,2,3,4,5,6,7,8,9,10,11,12}
+	{
+ 	\draw[foo,white] (\offset+\interval*\x,\top) -- (\offset+\interval*\x,\topp);
+	}
+
+\draw[foo,white] (0,\toppp) -- (1,\toppp);
+
+\end{scope}
+
+\end{tikzpicture}

@@ -1,0 +1,13 @@
+//MPD-File
+#ifndef(pack_C1) #declare global_pack_C1=yes; object {CAP_DIS_CERAMIC_25MM_44MM("",)translate<0,0,0> rotate<0,0.000000,0>rotate<0,-270.000000,0> rotate<0,0,0> translate<5.080000,0.000000,20.320000>}#end		//ceramic disc capacitator C1  C025-024X044
+#ifndef(pack_C2) #declare global_pack_C2=yes; object {CAP_DIS_CERAMIC_25MM_44MM("",)translate<0,0,0> rotate<0,0.000000,0>rotate<0,-270.000000,0> rotate<0,0,0> translate<10.160000,0.000000,20.320000>}#end		//ceramic disc capacitator C2  C025-024X044
+#ifndef(pack_IC1) #declare global_pack_IC1=yes; object {IC_DIS_DIP8("","",)translate<0,0,0> rotate<0,0.000000,0>rotate<0,-270.000000,0> rotate<0,0,0> translate<10.160000,0.000000,44.450000>translate<0,3.000000,0> }#end		//DIP8 IC1  DIL08
+#ifndef(pack_IC1) object{SOCKET_DIP8()rotate<0,-270.000000,0> rotate<0,0,0> translate<10.160000,0.000000,44.450000>}#end					//IC-Sockel 8Pin IC1 
+#ifndef(pack_IC2) #declare global_pack_IC2=yes; object {IC_DIS_DIP20("","",)translate<0,0,0> rotate<0,0.000000,0>rotate<0,-270.000000,0> rotate<0,0,0> translate<24.130000,0.000000,36.830000>translate<0,3.000000,0> }#end		//DIP20 IC2  DIL20
+#ifndef(pack_IC2) object{SOCKET_DIP20()rotate<0,-270.000000,0> rotate<0,0,0> translate<24.130000,0.000000,36.830000>}#end					//IC-Sockel 20Pin IC2 
+#ifndef(pack_IC3) #declare global_pack_IC3=yes; object {IC_DIS_DIP28("","",)translate<0,0,0> rotate<0,0.000000,0>rotate<0,-270.000000,0> rotate<0,0,0> translate<38.100000,0.000000,31.750000>translate<0,3.000000,0> }#end		//DIP28 300mil IC3  DIL28-3
+#ifndef(pack_IC3) object{SOCKET_DIP28()rotate<0,-270.000000,0> rotate<0,0,0> translate<38.100000,0.000000,31.750000>}#end					//IC-Sockel 28Pin IC3 
+#ifndef(pack_JP1) #declare global_pack_JP1=yes; object {PH_2X1J(0,)translate<0,0,0> rotate<0,0.000000,0>rotate<0,-270.000000,0> rotate<0,0,0> translate<22.860000,0.000000,16.510000>}#end		//Jumper 2,54mm Raster 2Pin 1Reihe (jumper.lib) JP1  JP1
+#ifndef(pack_SV1) #declare global_pack_SV1=yes; object {CON_DIS_WS6G()translate<0,0,0> rotate<0,180.000000,0>rotate<0,-180.000000,0> rotate<0,0,0> translate<38.100000,0.000000,7.620000>}#end		//Wannenstecker 6Pin SV1  ML6
+#ifndef(pack_SV2) #declare global_pack_SV2=yes; object {CON_DIS_WS10G()translate<0,0,0> rotate<0,180.000000,0>rotate<0,-180.000000,0> rotate<0,0,0> translate<15.240000,0.000000,7.620000>}#end		//Wannenstecker 10Pin SV2  ML10
+#ifndef(pack_SV3) #declare global_pack_SV3=yes; object {PH_1X3()translate<0,0,0> rotate<0,0.000000,0>rotate<0,-180.000000,0> rotate<0,0,0> translate<7.620000,0.000000,29.210000>}#end		//Stiftleiste 2,54mm Raster 3Pin 1Reihe (con-lstb.lib) SV3  MA03-1

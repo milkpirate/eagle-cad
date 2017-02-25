@@ -1,0 +1,101 @@
+Partlist
+
+Exported from E-Prommer.sch at 23.09.2014 12:23:19
+
+EAGLE Version 6.1.0 Copyright (c) 1988-2012 CadSoft
+
+Assembly variant: 
+
+Part     Value          Device               Package       Library                 Sheet
+
+C1       22p            C-EU025-025X050      C025-025X050  rcl                     1
+C2       22p            C-EU025-025X050      C025-025X050  rcl                     1
+C3       u1             C-EU025-025X050      C025-025X050  rcl                     1
+C4       u1             C-EU025-025X050      C025-025X050  rcl                     1
+C5       27pf           C-EU025-024X044      C025-024X044  rcl                     1
+C6       27pf           C-EU025-024X044      C025-024X044  rcl                     1
+C7       100nf          C-EU025-024X044      C025-024X044  rcl                     1
+C8       100nf          C-EU025-024X044      C025-024X044  rcl                     1
+C9       470µF-25v      CPOL-EUE3.5-10       E3,5-10       rcl                     1
+C10      470µF-63v      CPOL-EUE5-13         E5-13         rcl                     1
+C11      100nf          C-EU025-024X044      C025-024X044  rcl                     1
+C12      100nf          C-EU025-024X044      C025-024X044  rcl                     1
+C13      10µF-40v       CPOL-EUE2.5-5        E2,5-5        rcl                     1
+C14      2200u-30v      CPOL-EUE7.5-18       E7,5-18       rcl                     1
+C15      10u            CPOL-EUE2.5-7        E2,5-7        rcl                     1
+CN1                     USBTHM               USB-MINIB-THM adafruit                1
+D1       1N5060GP       1N5060GP             DO15-12       diode                   1
+D2       1N5060GP       1N5060GP             DO15-12       diode                   1
+D3       1N4004         DIODE-DO35-10        DO35-10       diode                   1
+D8       1N4004         DIODE-DO35-10        DO35-10       diode                   1
+D9       SB130          SCHOTTKY-DIODEDO35-7 DO35-7        diode                   1
+D10      SB130          SCHOTTKY-DIODEDO35-7 DO35-7        diode                   1
+D11      1N5060GP       1N5060GP             DO15-12       diode                   1
+D12      1N5060GP       1N5060GP             DO15-12       diode                   1
+GN       LED5MM         LED5MM               LED5MM        led                     1
+GND      LSP10          LSP10                LSP10         solpad                  1
+IC1      AT90S8515P     AT90S8515P           DIL40         atmel                   1
+IC2      317T           317T                 TO220H        linear                  1
+IC3      74HC574N       74HC574N             DIL20         74xx-us                 1
+IC5                     DIL32                DIL32         dil                     1
+IC6      7805T          7805T                TO220H        linear                  1
+IC7      317T           317T                 TO220H        linear                  1
+JP1                     JP1E                 JP1           jumper                  1
+JP2                     JP1E                 JP1           jumper                  1
+JP3                     JP1E                 JP1           jumper                  1
+JP4                     PINHD-1X6            1X06          pinhead                 1
+JS1                     JP3Q                 JP3Q          jumper                  1
+JS2                     JP6Q                 JP6Q          jumper                  1
+JS3                     JP4Q                 JP4Q          jumper                  1
+JS4                     JP4Q                 JP4Q          jumper                  1
+JS5                     JP4Q                 JP4Q          jumper                  1
+JS6                     JP4Q                 JP4Q          jumper                  1
+JS7                     JP4Q                 JP4Q          jumper                  1
+JS8                     JP4Q                 JP4Q          jumper                  1
+JS9                     JP4Q                 JP4Q          jumper                  1
+JS10                    JP4Q                 JP4Q          jumper                  1
+R1       1k             R-EU_0207/7          0207/7        rcl                     1
+R2       1k             R-EU_0207/7          0207/7        rcl                     1
+R3       1k             R-EU_0207/7          0207/7        rcl                     1
+R4       1k             R-EU_0207/7          0207/7        rcl                     1
+R5       1k             R-EU_0207/7          0207/7        rcl                     1
+R6       1k             R-EU_0207/7          0207/7        rcl                     1
+R7       1k             R-EU_0207/7          0207/7        rcl                     1
+R8       1k             R-EU_0207/7          0207/7        rcl                     1
+R9       33k            R-EU_0204/7          0204/7        rcl                     1
+R10      3k3            R-EU_0204/7          0204/7        rcl                     1
+R11      470            R-EU_0204/7          0204/7        rcl                     1
+R12      5k             R-TRIMM3296W         RTRIM3296W    rcl                     1
+R13      5k             R-TRIMM3296W         RTRIM3296W    rcl                     1
+R14      5k             R-TRIMM3296W         RTRIM3296W    rcl                     1
+R15      10k            R-TRIMM3296W         RTRIM3296W    rcl                     1
+R16      50k            R-TRIMM3296W         RTRIM3296W    rcl                     1
+R17      10k            R-TRIMM3296W         RTRIM3296W    rcl                     1
+R18      270            R-EU_0207/7          0207/7        rcl                     1
+R19      1k             R-EU_0207/7          0207/7        rcl                     1
+R20      2k7            R-EU_0207/7          0207/7        rcl                     1
+R21      10k            R-EU_0207/7          0207/7        rcl                     1
+R22      4k7            R-EU_0207/7          0207/7        rcl                     1
+R23      270            R-EU_0207/7          0207/7        rcl                     1
+R24      5k             R-TRIMM3296W         RTRIM3296W    rcl                     1
+R25      2k2            R-TRIMM3296W         RTRIM3296W    rcl                     1
+R26      1k             R-EU_0207/7          0207/7        rcl                     1
+R27      1k             R-EU_0207/7          0207/7        rcl                     1
+R28      6k8            R-EU_0207/7          0207/7        rcl                     1
+R29      10k            R-EU_0207/7          0207/7        rcl                     1
+R30      10k            R-EU_0207/7          0207/7        rcl                     1
+R31      1k             R-EU_0207/7          0207/7        rcl                     1
+R32      1K5            R-EU_0204/7          0204/7        rcl                     1
+R33      50k            R-TRIMM3296W         RTRIM3296W    rcl                     1
+RT       LED5MM         LED5MM               LED5MM        led                     1
+T1       BC327          BC327                SOT54A        transistor-small-signal 1
+T2       BC547          BC547                SOT54A        transistor-small-signal 1
+T3       BC548          BC547                TO92          transistor-npn          1
+T4       BC548          BC547                TO92          transistor-npn          1
+T5       BC328          BC327                TO92          transistor-pnp          1
+U$6      CH340G         CH340G               SO16          _MY_OWN_LIB             1
+U$7      2.1MMJACKTHM   2.1MMJACKTHM         PJ-102A       adafruit                1
+UXX      LSP10          LSP10                LSP10         solpad                  1
+VPP      LSP10          LSP10                LSP10         solpad                  1
+Y1                      CRYSTALHC49US        HC49US        SparkFun-FreqCtrl       1
+Y2                      CRYSTALHC49US        HC49US        SparkFun-FreqCtrl       1
