@@ -2115,49 +2115,33 @@ These rules are the minimal specs we consider to be consistently etchable (i.e. 
 </pass>
 </autorouter>
 <elements>
-<element name="U$2" library="fabhack" package="LAUNCHPAD-XL" value="STELLARIS-LAUNCHPADSTELLARIS-LAUNCHPAD" x="-78.74" y="1.27"/>
-<element name="U$1" library="reprap" package="DIL16" value="POLOLUESTEPPERDRIVER" x="-81.28" y="21.59"/>
-<element name="U$3" library="reprap" package="DIL16" value="POLOLUESTEPPERDRIVER" x="-102.87" y="21.59"/>
+<element name="U$2" library="fabhack" package="LAUNCHPAD-XL" value="STELLARIS-LAUNCHPADSTELLARIS-LAUNCHPAD" x="35.56" y="20.32"/>
 <element name="U$4" library="reprap" package="DIL16" value="POLOLUESTEPPERDRIVER" x="-124.46" y="21.59"/>
 <element name="U$5" library="reprap" package="DIL16" value="POLOLUESTEPPERDRIVER" x="-13.97" y="73.66"/>
-<element name="U$6" library="reprap" package="DIL16" value="POLOLUESTEPPERDRIVER" x="-35.56" y="73.66"/>
-<element name="U$7" library="reprap" package="DIL16" value="POLOLUESTEPPERDRIVER" x="-57.15" y="73.66"/>
-<element name="U$8" library="reprap" package="DIL16" value="POLOLUESTEPPERDRIVER" x="-78.74" y="73.66"/>
+<element name="U$6" library="reprap" package="DIL16" value="POLOLUESTEPPERDRIVER" x="64.77" y="-3.81" rot="R270"/>
+<element name="U$7" library="reprap" package="DIL16" value="POLOLUESTEPPERDRIVER" x="116.84" y="16.51" rot="R90"/>
+<element name="U$8" library="reprap" package="DIL16" value="POLOLUESTEPPERDRIVER" x="90.17" y="17.78" rot="R90"/>
 <element name="C1" library="rcl" package="E2,5-7" value="" x="-116.84" y="146.05"/>
 <element name="C2" library="rcl" package="E2,5-7" value="" x="-127" y="146.05"/>
 <element name="C3" library="rcl" package="E2,5-7" value="" x="-137.16" y="146.05"/>
 <element name="C4" library="rcl" package="E2,5-7" value="" x="-19.05" y="156.21"/>
 <element name="C5" library="rcl" package="E2,5-7" value="" x="-29.21" y="156.21"/>
-<element name="C6" library="rcl" package="E2,5-7" value="" x="-39.37" y="156.21"/>
-<element name="C7" library="rcl" package="E2,5-7" value="" x="-49.53" y="156.21"/>
 <element name="JP1" library="jumper" package="JP3Q" value="" x="-53.34" y="147.32"/>
 <element name="JP2" library="jumper" package="JP3Q" value="" x="-62.23" y="147.32"/>
 <element name="JP3" library="jumper" package="JP3Q" value="" x="-71.12" y="147.32"/>
 <element name="JP4" library="jumper" package="JP3Q" value="" x="-80.01" y="147.32"/>
 <element name="JP5" library="jumper" package="JP3Q" value="" x="-88.9" y="147.32"/>
-<element name="JP6" library="jumper" package="JP3Q" value="" x="-97.79" y="147.32"/>
-<element name="JP7" library="jumper" package="JP3Q" value="" x="-106.68" y="147.32"/>
 <element name="R1" library="rcl" package="0204/7" value="" x="-120.65" y="153.67"/>
 <element name="R2" library="rcl" package="0204/7" value="" x="-130.81" y="153.67"/>
 <element name="R3" library="rcl" package="0204/7" value="" x="-140.97" y="153.67"/>
 <element name="R4" library="rcl" package="0204/7" value="" x="-17.78" y="161.29"/>
 <element name="R5" library="rcl" package="0204/7" value="" x="-27.94" y="161.29"/>
-<element name="R6" library="rcl" package="0204/7" value="" x="-38.1" y="161.29"/>
-<element name="R7" library="rcl" package="0204/7" value="" x="-48.26" y="161.29"/>
 <element name="X1" library="bt_con-jst-xh" package="B4B-XH" value="04-JST-B4B-XH-A" x="-77.47" y="115.57"/>
 <element name="X2" library="bt_con-jst-xh" package="B4B-XH" value="04-JST-B4B-XH-A" x="-95.25" y="115.57"/>
 <element name="X3" library="bt_con-jst-xh" package="B4B-XH" value="04-JST-B4B-XH-A" x="-113.03" y="115.57"/>
 <element name="X4" library="bt_con-jst-xh" package="B4B-XH" value="04-JST-B4B-XH-A" x="-130.81" y="115.57"/>
 <element name="X5" library="bt_con-jst-xh" package="B4B-XH" value="04-JST-B4B-XH-A" x="-24.13" y="125.73"/>
-<element name="X6" library="bt_con-jst-xh" package="B4B-XH" value="04-JST-B4B-XH-A" x="-41.91" y="125.73"/>
-<element name="X7" library="bt_con-jst-xh" package="B4B-XH" value="04-JST-B4B-XH-A" x="-59.69" y="125.73"/>
-<element name="X8" library="bt_con-jst-xh" package="B4B-XH" value="04-JST-B4B-XH-A" x="-77.47" y="125.73"/>
-<element name="X9" library="bt_con-jst-xh" package="B4B-XH" value="04-JST-B4B-XH-A" x="-95.25" y="125.73"/>
 <element name="X10" library="bt_con-jst-xh" package="B4B-XH" value="04-JST-B4B-XH-A" x="-113.03" y="125.73"/>
-<element name="X11" library="bt_con-jst-xh" package="B4B-XH" value="04-JST-B4B-XH-A" x="-130.81" y="125.73"/>
-<element name="X12" library="bt_con-jst-xh" package="B4B-XH" value="04-JST-B4B-XH-A" x="-24.13" y="135.89"/>
-<element name="X13" library="bt_con-jst-xh" package="B4B-XH" value="04-JST-B4B-XH-A" x="-41.91" y="135.89"/>
-<element name="X14" library="bt_con-jst-xh" package="B4B-XH" value="04-JST-B4B-XH-A" x="-59.69" y="135.89"/>
 <element name="U$9" library="bt_con-jst-xh" package="B3B-XH" value="03-JST-B3B-XH-A" x="-49.53" y="90.17"/>
 <element name="U$10" library="bt_con-jst-xh" package="B3B-XH" value="03-JST-B3B-XH-A" x="-67.31" y="90.17"/>
 <element name="U$11" library="bt_con-jst-xh" package="B3B-XH" value="03-JST-B3B-XH-A" x="-85.09" y="90.17"/>
@@ -2165,18 +2149,13 @@ These rules are the minimal specs we consider to be consistently etchable (i.e. 
 <element name="C8" library="rcl" package="E2,5-5" value="" x="-104.14" y="154.94"/>
 <element name="C9" library="rcl" package="E2,5-5" value="" x="-113.03" y="154.94"/>
 <element name="C10" library="rcl" package="E2,5-5" value="" x="-77.47" y="154.94"/>
-<element name="C11" library="rcl" package="E2,5-5" value="" x="-95.25" y="154.94"/>
-<element name="R8" library="rcl" package="0204/7" value="" x="-58.42" y="161.29"/>
 <element name="R9" library="rcl" package="0204/7" value="" x="-68.58" y="161.29"/>
 <element name="R11" library="rcl" package="0204/7" value="" x="-88.9" y="161.29"/>
 <element name="R12" library="rcl" package="0204/7" value="" x="-99.06" y="161.29"/>
 <element name="U$13" library="bt_con-jst-xh" package="B3B-XH" value="03-JST-B3B-XH-A" x="-120.65" y="90.17"/>
 <element name="U$14" library="bt_con-jst-xh" package="B3B-XH" value="03-JST-B3B-XH-A" x="-138.43" y="90.17"/>
 <element name="U$15" library="bt_con-jst-xh" package="B3B-XH" value="03-JST-B3B-XH-A" x="-25.4" y="115.57"/>
-<element name="U$16" library="bt_con-jst-xh" package="B3B-XH" value="03-JST-B3B-XH-A" x="-43.18" y="115.57"/>
 <element name="X15" library="bt_con-jst-xh" package="B4B-XH" value="04-JST-B4B-XH-A" x="-77.47" y="135.89"/>
-<element name="X16" library="bt_con-jst-xh" package="B4B-XH" value="04-JST-B4B-XH-A" x="-95.25" y="135.89"/>
-<element name="Q3" library="transistor-fet" package="TO220" value="IRF540" x="-127" y="60.96"/>
 <element name="Q4" library="transistor-fet" package="TO220" value="IRF540" x="-138.43" y="60.96"/>
 <element name="X19" library="bt_con-jst-xh" package="B4B-XH" value="04-JST-B4B-XH-A" x="-24.13" y="146.05"/>
 <element name="Q5" library="transistor-fet" package="TO220" value="IRF540" x="-19.05" y="95.25"/>
@@ -2192,6 +2171,9 @@ These rules are the minimal specs we consider to be consistently etchable (i.e. 
 <element name="C15" library="rcl" package="C025-025X050" value="" x="-142.24" y="-81.28"/>
 <element name="C18" library="rcl" package="C025-025X050" value="" x="-142.24" y="-86.36"/>
 <element name="C20" library="rcl" package="E2,5-5" value="" x="-142.24" y="-91.44"/>
+<element name="U$1" library="bt_con-jst-xh" package="B3B-XH" value="03-JST-B3B-XH-A" x="-139.7" y="-100.33"/>
+<element name="U$3" library="bt_con-jst-xh" package="B3B-XH" value="03-JST-B3B-XH-A" x="-139.7" y="-110.49"/>
+<element name="U$12" library="bt_con-jst-xh" package="B3B-XH" value="03-JST-B3B-XH-A" x="-139.7" y="-120.65"/>
 </elements>
 <signals>
 <signal name="3.3V">
@@ -2207,11 +2189,35 @@ These rules are the minimal specs we consider to be consistently etchable (i.e. 
 <contactref element="U$2" pad="GND2"/>
 </signal>
 <signal name="GND">
+<contactref element="C10" pad="-"/>
+<contactref element="C8" pad="-"/>
+<contactref element="C9" pad="-"/>
+<contactref element="U$13" pad="P$3"/>
+<contactref element="U$14" pad="P$3"/>
+<contactref element="U$15" pad="P$3"/>
+<contactref element="U$18" pad="IN-"/>
+<contactref element="U$19" pad="IN-"/>
+<contactref element="C17" pad="2"/>
+<contactref element="C14" pad="-"/>
+<contactref element="C19" pad="2"/>
+<contactref element="C16" pad="-"/>
+<contactref element="U$18" pad="OUT-"/>
+<contactref element="C20" pad="-"/>
+<contactref element="C18" pad="2"/>
+<contactref element="U$19" pad="OUT-"/>
+<contactref element="C13" pad="-"/>
+<contactref element="C15" pad="2"/>
+<contactref element="Q4" pad="3"/>
+<contactref element="Q5" pad="2"/>
+<contactref element="X19" pad="P$4"/>
+<contactref element="X19" pad="P$3"/>
+<contactref element="Q5" pad="3"/>
+<contactref element="R2" pad="1"/>
+<contactref element="R3" pad="1"/>
+<contactref element="R4" pad="1"/>
+<contactref element="R5" pad="1"/>
+<contactref element="R1" pad="1"/>
 <contactref element="U$6" pad="8"/>
-<contactref element="U$1" pad="8"/>
-<contactref element="U$1" pad="2"/>
-<contactref element="U$3" pad="8"/>
-<contactref element="U$3" pad="2"/>
 <contactref element="U$4" pad="8"/>
 <contactref element="U$4" pad="2"/>
 <contactref element="U$5" pad="8"/>
@@ -2226,50 +2232,21 @@ These rules are the minimal specs we consider to be consistently etchable (i.e. 
 <contactref element="C3" pad="-"/>
 <contactref element="C4" pad="-"/>
 <contactref element="C5" pad="-"/>
-<contactref element="C6" pad="-"/>
-<contactref element="C7" pad="-"/>
-<contactref element="R2" pad="1"/>
-<contactref element="R3" pad="1"/>
-<contactref element="R7" pad="1"/>
-<contactref element="R4" pad="1"/>
-<contactref element="R6" pad="1"/>
-<contactref element="R5" pad="1"/>
-<contactref element="R1" pad="1"/>
 <contactref element="U$11" pad="P$3"/>
 <contactref element="U$10" pad="P$3"/>
 <contactref element="U$9" pad="P$3"/>
-<contactref element="C10" pad="-"/>
-<contactref element="C8" pad="-"/>
-<contactref element="C9" pad="-"/>
-<contactref element="C11" pad="-"/>
-<contactref element="U$13" pad="P$3"/>
-<contactref element="U$14" pad="P$3"/>
-<contactref element="U$15" pad="P$3"/>
-<contactref element="U$16" pad="P$3"/>
-<contactref element="U$18" pad="IN-"/>
-<contactref element="U$19" pad="IN-"/>
-<contactref element="C17" pad="2"/>
-<contactref element="C14" pad="-"/>
-<contactref element="C19" pad="2"/>
-<contactref element="C16" pad="-"/>
-<contactref element="U$18" pad="OUT-"/>
-<contactref element="C20" pad="-"/>
-<contactref element="C18" pad="2"/>
-<contactref element="U$19" pad="OUT-"/>
-<contactref element="C13" pad="-"/>
-<contactref element="C15" pad="2"/>
-<contactref element="Q3" pad="3"/>
-<contactref element="Q4" pad="3"/>
-<contactref element="Q5" pad="2"/>
-<contactref element="X19" pad="P$4"/>
-<contactref element="X19" pad="P$3"/>
-<contactref element="Q5" pad="3"/>
+<contactref element="U$1" pad="P$3"/>
+<contactref element="U$3" pad="P$3"/>
+<contactref element="U$12" pad="P$3"/>
+<wire x1="-137.16" y1="-100.33" x2="-137.16" y2="-110.49" width="0" layer="19" extent="1-1"/>
+<wire x1="-140.97" y1="-91.44" x2="-137.16" y2="-100.33" width="0" layer="19" extent="1-1"/>
 <wire x1="-140.97" y1="-86.36" x2="-140.97" y2="-91.44" width="0" layer="19" extent="1-1"/>
 <wire x1="-140.97" y1="-81.28" x2="-140.97" y2="-86.36" width="0" layer="19" extent="1-1"/>
 <wire x1="-140.97" y1="-74.93" x2="-140.97" y2="-81.28" width="0" layer="19" extent="1-1"/>
 <wire x1="-140.97" y1="-69.85" x2="-140.97" y2="-74.93" width="0" layer="19" extent="1-1"/>
 <wire x1="-140.97" y1="-59.69" x2="-140.97" y2="-69.85" width="0" layer="19" extent="1-1"/>
 <wire x1="-140.97" y1="-53.34" x2="-140.97" y2="-59.69" width="0" layer="19" extent="1-1"/>
+<wire x1="-137.16" y1="-120.65" x2="-137.16" y2="-110.49" width="0" layer="19" extent="1-1"/>
 <wire x1="-140.97" y1="-40.64" x2="-140.97" y2="-53.34" width="0" layer="19" extent="1-1"/>
 <wire x1="-143.51" y1="-17.21" x2="-140.97" y2="-40.64" width="0" layer="19" extent="1-1"/>
 <wire x1="-143.51" y1="-1.97" x2="-143.51" y2="-17.21" width="0" layer="19" extent="1-1"/>
@@ -2277,42 +2254,31 @@ These rules are the minimal specs we consider to be consistently etchable (i.e. 
 <wire x1="-128.05" y1="-1.97" x2="-128.05" y2="-17.21" width="0" layer="19" extent="1-1"/>
 <wire x1="-142.24" y1="27.94" x2="-143.51" y2="-1.97" width="0" layer="19" extent="1-1"/>
 <wire x1="-129.54" y1="30.48" x2="-142.24" y2="27.94" width="0" layer="19" extent="1-1"/>
-<wire x1="-120.65" y1="27.94" x2="-129.54" y2="30.48" width="0" layer="19" extent="1-1"/>
-<wire x1="-107.95" y1="30.48" x2="-120.65" y2="27.94" width="0" layer="19" extent="1-1"/>
-<wire x1="-99.06" y1="27.94" x2="-107.95" y2="30.48" width="0" layer="19" extent="1-1"/>
-<wire x1="-86.36" y1="30.48" x2="-99.06" y2="27.94" width="0" layer="19" extent="1-1"/>
-<wire x1="-124.46" y1="54.61" x2="-129.54" y2="30.48" width="0" layer="19" extent="1-1"/>
-<wire x1="-135.89" y1="54.61" x2="-124.46" y2="54.61" width="0" layer="19" extent="1-1"/>
+<wire x1="-135.89" y1="54.61" x2="-129.54" y2="30.48" width="0" layer="19" extent="1-1"/>
 <wire x1="-135.89" y1="90.17" x2="-135.89" y2="54.61" width="0" layer="19" extent="1-1"/>
 <wire x1="-118.11" y1="90.17" x2="-135.89" y2="90.17" width="0" layer="19" extent="1-1"/>
-<wire x1="-96.52" y1="80.01" x2="-118.11" y2="90.17" width="0" layer="19" extent="1-1"/>
-<wire x1="-83.82" y1="82.55" x2="-96.52" y2="80.01" width="0" layer="19" extent="1-1"/>
-<wire x1="-82.55" y1="90.17" x2="-83.82" y2="82.55" width="0" layer="19" extent="1-1"/>
-<wire x1="-74.93" y1="80.01" x2="-83.82" y2="82.55" width="0" layer="19" extent="1-1"/>
-<wire x1="-62.23" y1="82.55" x2="-74.93" y2="80.01" width="0" layer="19" extent="1-1"/>
-<wire x1="-64.77" y1="90.17" x2="-62.23" y2="82.55" width="0" layer="19" extent="1-1"/>
-<wire x1="-53.34" y1="80.01" x2="-62.23" y2="82.55" width="0" layer="19" extent="1-1"/>
-<wire x1="-46.99" y1="90.17" x2="-53.34" y2="80.01" width="0" layer="19" extent="1-1"/>
-<wire x1="-40.64" y1="82.55" x2="-46.99" y2="90.17" width="0" layer="19" extent="1-1"/>
-<wire x1="-31.75" y1="80.01" x2="-40.64" y2="82.55" width="0" layer="19" extent="1-1"/>
+<wire x1="83.82" y1="0" x2="-118.11" y2="90.17" width="0" layer="19" extent="1-1"/>
+<wire x1="81.28" y1="12.7" x2="83.82" y2="0" width="0" layer="19" extent="1-1"/>
+<wire x1="-82.55" y1="90.17" x2="81.28" y2="12.7" width="0" layer="19" extent="1-1"/>
+<wire x1="110.49" y1="-1.27" x2="81.28" y2="12.7" width="0" layer="19" extent="1-1"/>
+<wire x1="107.95" y1="11.43" x2="110.49" y2="-1.27" width="0" layer="19" extent="1-1"/>
+<wire x1="-64.77" y1="90.17" x2="107.95" y2="11.43" width="0" layer="19" extent="1-1"/>
+<wire x1="71.12" y1="13.97" x2="107.95" y2="11.43" width="0" layer="19" extent="1-1"/>
+<wire x1="-46.99" y1="90.17" x2="71.12" y2="13.97" width="0" layer="19" extent="1-1"/>
+<wire x1="73.66" y1="1.27" x2="-46.99" y2="90.17" width="0" layer="19" extent="1-1"/>
+<wire x1="-31.75" y1="80.01" x2="73.66" y2="1.27" width="0" layer="19" extent="1-1"/>
 <wire x1="-19.05" y1="82.55" x2="-31.75" y2="80.01" width="0" layer="19" extent="1-1"/>
 <wire x1="-19.05" y1="88.9" x2="-19.05" y2="82.55" width="0" layer="19" extent="1-1"/>
 <wire x1="-16.51" y1="88.9" x2="-19.05" y2="88.9" width="0" layer="19" extent="1-1"/>
-<wire x1="-40.64" y1="115.57" x2="-46.99" y2="90.17" width="0" layer="19" extent="1-1"/>
-<wire x1="-22.86" y1="115.57" x2="-40.64" y2="115.57" width="0" layer="19" extent="1-1"/>
+<wire x1="-22.86" y1="115.57" x2="-19.05" y2="88.9" width="0" layer="19" extent="1-1"/>
 <wire x1="-22.86" y1="146.05" x2="-22.86" y2="115.57" width="0" layer="19" extent="1-1"/>
 <wire x1="-20.32" y1="146.05" x2="-22.86" y2="146.05" width="0" layer="19" extent="1-1"/>
 <wire x1="-17.78" y1="156.21" x2="-20.32" y2="146.05" width="0" layer="19" extent="1-1"/>
 <wire x1="-21.59" y1="161.29" x2="-17.78" y2="156.21" width="0" layer="19" extent="1-1"/>
 <wire x1="-27.94" y1="156.21" x2="-21.59" y2="161.29" width="0" layer="19" extent="1-1"/>
 <wire x1="-31.75" y1="161.29" x2="-27.94" y2="156.21" width="0" layer="19" extent="1-1"/>
-<wire x1="-38.1" y1="156.21" x2="-31.75" y2="161.29" width="0" layer="19" extent="1-1"/>
-<wire x1="-41.91" y1="161.29" x2="-38.1" y2="156.21" width="0" layer="19" extent="1-1"/>
-<wire x1="-48.26" y1="156.21" x2="-41.91" y2="161.29" width="0" layer="19" extent="1-1"/>
-<wire x1="-52.07" y1="161.29" x2="-48.26" y2="156.21" width="0" layer="19" extent="1-1"/>
-<wire x1="-76.2" y1="154.94" x2="-52.07" y2="161.29" width="0" layer="19" extent="1-1"/>
-<wire x1="-93.98" y1="154.94" x2="-76.2" y2="154.94" width="0" layer="19" extent="1-1"/>
-<wire x1="-102.87" y1="154.94" x2="-93.98" y2="154.94" width="0" layer="19" extent="1-1"/>
+<wire x1="-76.2" y1="154.94" x2="-31.75" y2="161.29" width="0" layer="19" extent="1-1"/>
+<wire x1="-102.87" y1="154.94" x2="-76.2" y2="154.94" width="0" layer="19" extent="1-1"/>
 <wire x1="-111.76" y1="154.94" x2="-102.87" y2="154.94" width="0" layer="19" extent="1-1"/>
 <wire x1="-115.57" y1="146.05" x2="-111.76" y2="154.94" width="0" layer="19" extent="1-1"/>
 <wire x1="-125.73" y1="146.05" x2="-115.57" y2="146.05" width="0" layer="19" extent="1-1"/>
@@ -2322,16 +2288,12 @@ These rules are the minimal specs we consider to be consistently etchable (i.e. 
 <wire x1="-144.78" y1="153.67" x2="-134.62" y2="153.67" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="+12V">
-<contactref element="U$1" pad="1"/>
 <contactref element="U$6" pad="1"/>
 <contactref element="U$5" pad="1"/>
 <contactref element="U$4" pad="1"/>
-<contactref element="U$3" pad="1"/>
 <contactref element="U$7" pad="1"/>
 <contactref element="U$8" pad="1"/>
 <contactref element="C1" pad="+"/>
-<contactref element="C7" pad="+"/>
-<contactref element="C6" pad="+"/>
 <contactref element="C5" pad="+"/>
 <contactref element="C4" pad="+"/>
 <contactref element="C3" pad="+"/>
@@ -2343,8 +2305,6 @@ These rules are the minimal specs we consider to be consistently etchable (i.e. 
 <contactref element="U$18" pad="IN+"/>
 <contactref element="C16" pad="+"/>
 <contactref element="C19" pad="1"/>
-<contactref element="X16" pad="P$2"/>
-<contactref element="X16" pad="P$1"/>
 <contactref element="X15" pad="P$2"/>
 <contactref element="X15" pad="P$1"/>
 <contactref element="X19" pad="P$1"/>
@@ -2357,45 +2317,39 @@ These rules are the minimal specs we consider to be consistently etchable (i.e. 
 <wire x1="-143.51" y1="-40.64" x2="-143.51" y2="-53.34" width="0" layer="19" extent="1-1"/>
 <wire x1="-128.05" y1="-26.67" x2="-143.51" y2="-40.64" width="0" layer="19" extent="1-1"/>
 <wire x1="-128.05" y1="-11.43" x2="-128.05" y2="-26.67" width="0" layer="19" extent="1-1"/>
-<wire x1="-120.65" y1="30.48" x2="-128.05" y2="-11.43" width="0" layer="19" extent="1-1"/>
-<wire x1="-142.24" y1="30.48" x2="-120.65" y2="30.48" width="0" layer="19" extent="1-1"/>
-<wire x1="-99.06" y1="30.48" x2="-120.65" y2="30.48" width="0" layer="19" extent="1-1"/>
-<wire x1="-96.52" y1="82.55" x2="-99.06" y2="30.48" width="0" layer="19" extent="1-1"/>
-<wire x1="-74.93" y1="82.55" x2="-96.52" y2="82.55" width="0" layer="19" extent="1-1"/>
-<wire x1="-53.34" y1="82.55" x2="-74.93" y2="82.55" width="0" layer="19" extent="1-1"/>
-<wire x1="-31.75" y1="82.55" x2="-53.34" y2="82.55" width="0" layer="19" extent="1-1"/>
+<wire x1="-142.24" y1="30.48" x2="-128.05" y2="-11.43" width="0" layer="19" extent="1-1"/>
+<wire x1="81.28" y1="0" x2="-142.24" y2="30.48" width="0" layer="19" extent="1-1"/>
+<wire x1="107.95" y1="-1.27" x2="81.28" y2="0" width="0" layer="19" extent="1-1"/>
+<wire x1="73.66" y1="13.97" x2="107.95" y2="-1.27" width="0" layer="19" extent="1-1"/>
+<wire x1="-31.75" y1="82.55" x2="73.66" y2="13.97" width="0" layer="19" extent="1-1"/>
 <wire x1="-27.94" y1="88.9" x2="-31.75" y2="82.55" width="0" layer="19" extent="1-1"/>
-<wire x1="-96.52" y1="135.89" x2="-96.52" y2="82.55" width="0" layer="19" extent="1-1"/>
-<wire x1="-99.06" y1="135.89" x2="-96.52" y2="135.89" width="0" layer="19" extent="1-1"/>
-<wire x1="-81.28" y1="135.89" x2="-96.52" y2="135.89" width="0" layer="19" extent="1-1"/>
-<wire x1="-78.74" y1="135.89" x2="-81.28" y2="135.89" width="0" layer="19" extent="1-1"/>
-<wire x1="-118.11" y1="146.05" x2="-99.06" y2="135.89" width="0" layer="19" extent="1-1"/>
+<wire x1="-78.74" y1="135.89" x2="107.95" y2="-1.27" width="0" layer="19" extent="1-1"/>
+<wire x1="-81.28" y1="135.89" x2="-78.74" y2="135.89" width="0" layer="19" extent="1-1"/>
+<wire x1="-59.69" y1="156.21" x2="-78.74" y2="135.89" width="0" layer="19" extent="1-1"/>
+<wire x1="-45.72" y1="146.05" x2="-59.69" y2="156.21" width="0" layer="19" extent="1-1"/>
+<wire x1="-43.18" y1="146.05" x2="-45.72" y2="146.05" width="0" layer="19" extent="1-1"/>
+<wire x1="-27.94" y1="146.05" x2="-43.18" y2="146.05" width="0" layer="19" extent="1-1"/>
+<wire x1="-25.4" y1="146.05" x2="-27.94" y2="146.05" width="0" layer="19" extent="1-1"/>
+<wire x1="-30.48" y1="156.21" x2="-27.94" y2="146.05" width="0" layer="19" extent="1-1"/>
+<wire x1="-20.32" y1="156.21" x2="-30.48" y2="156.21" width="0" layer="19" extent="1-1"/>
+<wire x1="-118.11" y1="146.05" x2="-81.28" y2="135.89" width="0" layer="19" extent="1-1"/>
 <wire x1="-128.27" y1="146.05" x2="-118.11" y2="146.05" width="0" layer="19" extent="1-1"/>
 <wire x1="-138.43" y1="146.05" x2="-128.27" y2="146.05" width="0" layer="19" extent="1-1"/>
-<wire x1="-59.69" y1="156.21" x2="-78.74" y2="135.89" width="0" layer="19" extent="1-1"/>
-<wire x1="-50.8" y1="156.21" x2="-59.69" y2="156.21" width="0" layer="19" extent="1-1"/>
-<wire x1="-40.64" y1="156.21" x2="-50.8" y2="156.21" width="0" layer="19" extent="1-1"/>
-<wire x1="-30.48" y1="156.21" x2="-40.64" y2="156.21" width="0" layer="19" extent="1-1"/>
-<wire x1="-20.32" y1="156.21" x2="-30.48" y2="156.21" width="0" layer="19" extent="1-1"/>
-<wire x1="-27.94" y1="146.05" x2="-30.48" y2="156.21" width="0" layer="19" extent="1-1"/>
-<wire x1="-25.4" y1="146.05" x2="-27.94" y2="146.05" width="0" layer="19" extent="1-1"/>
-<wire x1="-43.18" y1="146.05" x2="-40.64" y2="156.21" width="0" layer="19" extent="1-1"/>
-<wire x1="-45.72" y1="146.05" x2="-43.18" y2="146.05" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$4">
 <contactref element="U$8" pad="11"/>
 <contactref element="U$8" pad="12"/>
-<wire x1="-83.82" y1="72.39" x2="-83.82" y2="69.85" width="0" layer="19" extent="1-1"/>
+<wire x1="91.44" y1="12.7" x2="93.98" y2="12.7" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$5">
 <contactref element="U$7" pad="11"/>
 <contactref element="U$7" pad="12"/>
-<wire x1="-62.23" y1="69.85" x2="-62.23" y2="72.39" width="0" layer="19" extent="1-1"/>
+<wire x1="120.65" y1="11.43" x2="118.11" y2="11.43" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$6">
 <contactref element="U$6" pad="11"/>
 <contactref element="U$6" pad="12"/>
-<wire x1="-40.64" y1="69.85" x2="-40.64" y2="72.39" width="0" layer="19" extent="1-1"/>
+<wire x1="60.96" y1="1.27" x2="63.5" y2="1.27" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$7">
 <contactref element="U$5" pad="11"/>
@@ -2407,30 +2361,16 @@ These rules are the minimal specs we consider to be consistently etchable (i.e. 
 <contactref element="U$4" pad="12"/>
 <wire x1="-129.54" y1="20.32" x2="-129.54" y2="17.78" width="0" layer="19" extent="1-1"/>
 </signal>
-<signal name="N$9">
-<contactref element="U$3" pad="11"/>
-<contactref element="U$3" pad="12"/>
-<wire x1="-107.95" y1="20.32" x2="-107.95" y2="17.78" width="0" layer="19" extent="1-1"/>
-</signal>
-<signal name="N$10">
-<contactref element="U$1" pad="11"/>
-<contactref element="U$1" pad="12"/>
-<wire x1="-86.36" y1="20.32" x2="-86.36" y2="17.78" width="0" layer="19" extent="1-1"/>
-</signal>
 <signal name="STEP_EN">
-<contactref element="U$1" pad="16"/>
 <contactref element="U$8" pad="16"/>
 <contactref element="U$7" pad="16"/>
 <contactref element="U$6" pad="16"/>
 <contactref element="U$5" pad="16"/>
 <contactref element="U$4" pad="16"/>
-<contactref element="U$3" pad="16"/>
-<wire x1="-107.95" y1="12.7" x2="-129.54" y2="12.7" width="0" layer="19" extent="1-1"/>
-<wire x1="-86.36" y1="12.7" x2="-107.95" y2="12.7" width="0" layer="19" extent="1-1"/>
-<wire x1="-83.82" y1="64.77" x2="-86.36" y2="12.7" width="0" layer="19" extent="1-1"/>
-<wire x1="-62.23" y1="64.77" x2="-83.82" y2="64.77" width="0" layer="19" extent="1-1"/>
-<wire x1="-40.64" y1="64.77" x2="-62.23" y2="64.77" width="0" layer="19" extent="1-1"/>
-<wire x1="-19.05" y1="64.77" x2="-40.64" y2="64.77" width="0" layer="19" extent="1-1"/>
+<wire x1="99.06" y1="12.7" x2="-129.54" y2="12.7" width="0" layer="19" extent="1-1"/>
+<wire x1="125.73" y1="11.43" x2="99.06" y2="12.7" width="0" layer="19" extent="1-1"/>
+<wire x1="55.88" y1="1.27" x2="125.73" y2="11.43" width="0" layer="19" extent="1-1"/>
+<wire x1="-19.05" y1="64.77" x2="55.88" y2="1.27" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$1">
 <contactref element="U$5" pad="13"/>
@@ -2452,53 +2392,53 @@ These rules are the minimal specs we consider to be consistently etchable (i.e. 
 <signal name="N$12">
 <contactref element="U$8" pad="13"/>
 <contactref element="JP2" pad="1"/>
-<wire x1="-96.52" y1="67.31" x2="-64.77" y2="146.05" width="0" layer="19" extent="1-1"/>
+<wire x1="96.52" y1="0" x2="-64.77" y2="146.05" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$13">
 <contactref element="U$8" pad="14"/>
 <contactref element="JP2" pad="3"/>
-<wire x1="-96.52" y1="64.77" x2="-62.23" y2="146.05" width="0" layer="19" extent="1-1"/>
+<wire x1="99.06" y1="0" x2="-62.23" y2="146.05" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$14">
 <contactref element="U$8" pad="15"/>
 <contactref element="JP2" pad="5"/>
 <contactref element="R1" pad="2"/>
 <wire x1="-116.84" y1="153.67" x2="-59.69" y2="146.05" width="0" layer="19" extent="1-1"/>
-<wire x1="-83.82" y1="67.31" x2="-59.69" y2="146.05" width="0" layer="19" extent="1-1"/>
+<wire x1="96.52" y1="12.7" x2="-59.69" y2="146.05" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$15">
 <contactref element="U$7" pad="13"/>
 <contactref element="JP3" pad="1"/>
-<wire x1="-74.93" y1="67.31" x2="-73.66" y2="146.05" width="0" layer="19" extent="1-1"/>
+<wire x1="123.19" y1="-1.27" x2="-73.66" y2="146.05" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$16">
 <contactref element="U$7" pad="14"/>
 <contactref element="JP3" pad="3"/>
-<wire x1="-74.93" y1="64.77" x2="-71.12" y2="146.05" width="0" layer="19" extent="1-1"/>
+<wire x1="125.73" y1="-1.27" x2="-71.12" y2="146.05" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$17">
 <contactref element="U$7" pad="15"/>
 <contactref element="JP3" pad="5"/>
 <contactref element="R2" pad="2"/>
 <wire x1="-127" y1="153.67" x2="-68.58" y2="146.05" width="0" layer="19" extent="1-1"/>
-<wire x1="-62.23" y1="67.31" x2="-68.58" y2="146.05" width="0" layer="19" extent="1-1"/>
+<wire x1="123.19" y1="11.43" x2="-68.58" y2="146.05" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$18">
 <contactref element="U$6" pad="13"/>
 <contactref element="JP4" pad="1"/>
-<wire x1="-53.34" y1="67.31" x2="-82.55" y2="146.05" width="0" layer="19" extent="1-1"/>
+<wire x1="58.42" y1="13.97" x2="-82.55" y2="146.05" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$19">
 <contactref element="U$6" pad="14"/>
 <contactref element="JP4" pad="3"/>
-<wire x1="-53.34" y1="64.77" x2="-80.01" y2="146.05" width="0" layer="19" extent="1-1"/>
+<wire x1="55.88" y1="13.97" x2="-80.01" y2="146.05" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$20">
 <contactref element="U$6" pad="15"/>
 <contactref element="JP4" pad="5"/>
 <contactref element="R3" pad="2"/>
 <wire x1="-137.16" y1="153.67" x2="-77.47" y2="146.05" width="0" layer="19" extent="1-1"/>
-<wire x1="-40.64" y1="67.31" x2="-77.47" y2="146.05" width="0" layer="19" extent="1-1"/>
+<wire x1="58.42" y1="1.27" x2="-77.47" y2="146.05" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$21">
 <contactref element="U$4" pad="13"/>
@@ -2517,260 +2457,136 @@ These rules are the minimal specs we consider to be consistently etchable (i.e. 
 <wire x1="-86.36" y1="146.05" x2="-24.13" y2="161.29" width="0" layer="19" extent="1-1"/>
 <wire x1="-129.54" y1="15.24" x2="-86.36" y2="146.05" width="0" layer="19" extent="1-1"/>
 </signal>
-<signal name="N$24">
-<contactref element="U$3" pad="13"/>
-<contactref element="JP6" pad="1"/>
-<wire x1="-100.33" y1="146.05" x2="-120.65" y2="15.24" width="0" layer="19" extent="1-1"/>
-</signal>
-<signal name="N$25">
-<contactref element="U$3" pad="14"/>
-<contactref element="JP6" pad="3"/>
-<wire x1="-97.79" y1="146.05" x2="-120.65" y2="12.7" width="0" layer="19" extent="1-1"/>
-</signal>
-<signal name="N$26">
-<contactref element="U$3" pad="15"/>
-<contactref element="JP6" pad="5"/>
-<contactref element="R6" pad="2"/>
-<wire x1="-95.25" y1="146.05" x2="-34.29" y2="161.29" width="0" layer="19" extent="1-1"/>
-<wire x1="-107.95" y1="15.24" x2="-95.25" y2="146.05" width="0" layer="19" extent="1-1"/>
-</signal>
-<signal name="N$27">
-<contactref element="U$1" pad="13"/>
-<contactref element="JP7" pad="1"/>
-<wire x1="-109.22" y1="146.05" x2="-99.06" y2="15.24" width="0" layer="19" extent="1-1"/>
-</signal>
-<signal name="N$28">
-<contactref element="U$1" pad="14"/>
-<contactref element="JP7" pad="3"/>
-<wire x1="-106.68" y1="146.05" x2="-99.06" y2="12.7" width="0" layer="19" extent="1-1"/>
-</signal>
-<signal name="N$29">
-<contactref element="U$1" pad="15"/>
-<contactref element="JP7" pad="5"/>
-<contactref element="R7" pad="2"/>
-<wire x1="-104.14" y1="146.05" x2="-44.45" y2="161.29" width="0" layer="19" extent="1-1"/>
-<wire x1="-86.36" y1="15.24" x2="-104.14" y2="146.05" width="0" layer="19" extent="1-1"/>
-</signal>
 <signal name="N$37">
 <contactref element="U$8" pad="3"/>
 <contactref element="X1" pad="P$1"/>
-<contactref element="X8" pad="P$1"/>
-<wire x1="-81.28" y1="115.57" x2="-81.28" y2="125.73" width="0" layer="19" extent="1-1"/>
-<wire x1="-96.52" y1="77.47" x2="-81.28" y2="115.57" width="0" layer="19" extent="1-1"/>
+<wire x1="86.36" y1="0" x2="-81.28" y2="115.57" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$38">
 <contactref element="U$8" pad="4"/>
 <contactref element="X1" pad="P$2"/>
-<contactref element="X8" pad="P$2"/>
-<wire x1="-78.74" y1="115.57" x2="-78.74" y2="125.73" width="0" layer="19" extent="1-1"/>
-<wire x1="-96.52" y1="74.93" x2="-78.74" y2="115.57" width="0" layer="19" extent="1-1"/>
+<wire x1="88.9" y1="0" x2="-78.74" y2="115.57" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$39">
 <contactref element="U$8" pad="5"/>
 <contactref element="X1" pad="P$3"/>
-<contactref element="X8" pad="P$3"/>
-<wire x1="-76.2" y1="115.57" x2="-76.2" y2="125.73" width="0" layer="19" extent="1-1"/>
-<wire x1="-83.82" y1="74.93" x2="-76.2" y2="115.57" width="0" layer="19" extent="1-1"/>
+<wire x1="88.9" y1="12.7" x2="-76.2" y2="115.57" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$40">
 <contactref element="U$8" pad="6"/>
 <contactref element="X1" pad="P$4"/>
-<contactref element="X8" pad="P$4"/>
-<wire x1="-73.66" y1="115.57" x2="-73.66" y2="125.73" width="0" layer="19" extent="1-1"/>
-<wire x1="-83.82" y1="77.47" x2="-73.66" y2="115.57" width="0" layer="19" extent="1-1"/>
+<wire x1="86.36" y1="12.7" x2="-73.66" y2="115.57" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$41">
 <contactref element="U$7" pad="3"/>
 <contactref element="X2" pad="P$1"/>
-<contactref element="X9" pad="P$1"/>
-<wire x1="-99.06" y1="115.57" x2="-99.06" y2="125.73" width="0" layer="19" extent="1-1"/>
-<wire x1="-74.93" y1="77.47" x2="-99.06" y2="115.57" width="0" layer="19" extent="1-1"/>
+<wire x1="113.03" y1="-1.27" x2="-99.06" y2="115.57" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$42">
 <contactref element="U$7" pad="4"/>
 <contactref element="X2" pad="P$2"/>
-<contactref element="X9" pad="P$2"/>
-<wire x1="-96.52" y1="115.57" x2="-96.52" y2="125.73" width="0" layer="19" extent="1-1"/>
-<wire x1="-74.93" y1="74.93" x2="-96.52" y2="115.57" width="0" layer="19" extent="1-1"/>
+<wire x1="115.57" y1="-1.27" x2="-96.52" y2="115.57" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$43">
 <contactref element="U$7" pad="5"/>
 <contactref element="X2" pad="P$3"/>
-<contactref element="X9" pad="P$3"/>
-<wire x1="-93.98" y1="115.57" x2="-93.98" y2="125.73" width="0" layer="19" extent="1-1"/>
-<wire x1="-62.23" y1="74.93" x2="-93.98" y2="115.57" width="0" layer="19" extent="1-1"/>
+<wire x1="115.57" y1="11.43" x2="-93.98" y2="115.57" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$44">
 <contactref element="U$7" pad="6"/>
 <contactref element="X2" pad="P$4"/>
-<contactref element="X9" pad="P$4"/>
-<wire x1="-91.44" y1="115.57" x2="-91.44" y2="125.73" width="0" layer="19" extent="1-1"/>
-<wire x1="-62.23" y1="77.47" x2="-91.44" y2="115.57" width="0" layer="19" extent="1-1"/>
+<wire x1="113.03" y1="11.43" x2="-91.44" y2="115.57" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$45">
 <contactref element="U$6" pad="3"/>
 <contactref element="X3" pad="P$1"/>
 <contactref element="X10" pad="P$1"/>
-<wire x1="-116.84" y1="115.57" x2="-53.34" y2="77.47" width="0" layer="19" extent="1-1"/>
+<wire x1="-116.84" y1="115.57" x2="68.58" y2="13.97" width="0" layer="19" extent="1-1"/>
 <wire x1="-116.84" y1="125.73" x2="-116.84" y2="115.57" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$46">
 <contactref element="U$6" pad="4"/>
 <contactref element="X3" pad="P$2"/>
 <contactref element="X10" pad="P$2"/>
-<wire x1="-114.3" y1="115.57" x2="-53.34" y2="74.93" width="0" layer="19" extent="1-1"/>
+<wire x1="-114.3" y1="115.57" x2="66.04" y2="13.97" width="0" layer="19" extent="1-1"/>
 <wire x1="-114.3" y1="125.73" x2="-114.3" y2="115.57" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$47">
 <contactref element="U$6" pad="5"/>
 <contactref element="X3" pad="P$3"/>
 <contactref element="X10" pad="P$3"/>
-<wire x1="-111.76" y1="115.57" x2="-40.64" y2="74.93" width="0" layer="19" extent="1-1"/>
+<wire x1="-111.76" y1="115.57" x2="66.04" y2="1.27" width="0" layer="19" extent="1-1"/>
 <wire x1="-111.76" y1="125.73" x2="-111.76" y2="115.57" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$48">
 <contactref element="U$6" pad="6"/>
 <contactref element="X3" pad="P$4"/>
 <contactref element="X10" pad="P$4"/>
-<wire x1="-109.22" y1="115.57" x2="-40.64" y2="77.47" width="0" layer="19" extent="1-1"/>
+<wire x1="-109.22" y1="115.57" x2="68.58" y2="1.27" width="0" layer="19" extent="1-1"/>
 <wire x1="-109.22" y1="125.73" x2="-109.22" y2="115.57" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$49">
 <contactref element="U$5" pad="3"/>
 <contactref element="X4" pad="P$1"/>
-<contactref element="X11" pad="P$1"/>
 <wire x1="-134.62" y1="115.57" x2="-31.75" y2="77.47" width="0" layer="19" extent="1-1"/>
-<wire x1="-134.62" y1="125.73" x2="-134.62" y2="115.57" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$50">
 <contactref element="U$5" pad="4"/>
 <contactref element="X4" pad="P$2"/>
-<contactref element="X11" pad="P$2"/>
 <wire x1="-132.08" y1="115.57" x2="-31.75" y2="74.93" width="0" layer="19" extent="1-1"/>
-<wire x1="-132.08" y1="125.73" x2="-132.08" y2="115.57" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$51">
 <contactref element="U$5" pad="5"/>
 <contactref element="X4" pad="P$3"/>
-<contactref element="X11" pad="P$3"/>
 <wire x1="-129.54" y1="115.57" x2="-19.05" y2="74.93" width="0" layer="19" extent="1-1"/>
-<wire x1="-129.54" y1="125.73" x2="-129.54" y2="115.57" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$52">
 <contactref element="U$5" pad="6"/>
 <contactref element="X4" pad="P$4"/>
-<contactref element="X11" pad="P$4"/>
 <wire x1="-127" y1="115.57" x2="-19.05" y2="77.47" width="0" layer="19" extent="1-1"/>
-<wire x1="-127" y1="125.73" x2="-127" y2="115.57" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$53">
 <contactref element="U$4" pad="3"/>
 <contactref element="X5" pad="P$1"/>
-<contactref element="X12" pad="P$1"/>
 <wire x1="-27.94" y1="125.73" x2="-142.24" y2="25.4" width="0" layer="19" extent="1-1"/>
-<wire x1="-27.94" y1="135.89" x2="-27.94" y2="125.73" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$54">
 <contactref element="U$4" pad="4"/>
 <contactref element="X5" pad="P$2"/>
-<contactref element="X12" pad="P$2"/>
 <wire x1="-25.4" y1="125.73" x2="-142.24" y2="22.86" width="0" layer="19" extent="1-1"/>
-<wire x1="-25.4" y1="135.89" x2="-25.4" y2="125.73" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$55">
 <contactref element="U$4" pad="5"/>
 <contactref element="X5" pad="P$3"/>
-<contactref element="X12" pad="P$3"/>
-<wire x1="-22.86" y1="125.73" x2="-22.86" y2="135.89" width="0" layer="19" extent="1-1"/>
-<wire x1="-129.54" y1="22.86" x2="-22.86" y2="125.73" width="0" layer="19" extent="1-1"/>
+<wire x1="-22.86" y1="125.73" x2="-129.54" y2="22.86" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$56">
 <contactref element="U$4" pad="6"/>
 <contactref element="X5" pad="P$4"/>
-<contactref element="X12" pad="P$4"/>
-<wire x1="-20.32" y1="125.73" x2="-20.32" y2="135.89" width="0" layer="19" extent="1-1"/>
-<wire x1="-129.54" y1="25.4" x2="-20.32" y2="125.73" width="0" layer="19" extent="1-1"/>
-</signal>
-<signal name="N$57">
-<contactref element="U$3" pad="3"/>
-<contactref element="X6" pad="P$1"/>
-<contactref element="X13" pad="P$1"/>
-<wire x1="-45.72" y1="125.73" x2="-120.65" y2="25.4" width="0" layer="19" extent="1-1"/>
-<wire x1="-45.72" y1="135.89" x2="-45.72" y2="125.73" width="0" layer="19" extent="1-1"/>
-</signal>
-<signal name="N$58">
-<contactref element="U$3" pad="4"/>
-<contactref element="X6" pad="P$2"/>
-<contactref element="X13" pad="P$2"/>
-<wire x1="-43.18" y1="125.73" x2="-120.65" y2="22.86" width="0" layer="19" extent="1-1"/>
-<wire x1="-43.18" y1="135.89" x2="-43.18" y2="125.73" width="0" layer="19" extent="1-1"/>
-</signal>
-<signal name="N$59">
-<contactref element="U$3" pad="5"/>
-<contactref element="X6" pad="P$3"/>
-<contactref element="X13" pad="P$3"/>
-<wire x1="-40.64" y1="125.73" x2="-40.64" y2="135.89" width="0" layer="19" extent="1-1"/>
-<wire x1="-107.95" y1="22.86" x2="-40.64" y2="125.73" width="0" layer="19" extent="1-1"/>
-</signal>
-<signal name="N$60">
-<contactref element="U$3" pad="6"/>
-<contactref element="X6" pad="P$4"/>
-<contactref element="X13" pad="P$4"/>
-<wire x1="-38.1" y1="125.73" x2="-38.1" y2="135.89" width="0" layer="19" extent="1-1"/>
-<wire x1="-107.95" y1="25.4" x2="-38.1" y2="125.73" width="0" layer="19" extent="1-1"/>
-</signal>
-<signal name="N$61">
-<contactref element="U$1" pad="3"/>
-<contactref element="X7" pad="P$1"/>
-<contactref element="X14" pad="P$1"/>
-<wire x1="-63.5" y1="125.73" x2="-99.06" y2="25.4" width="0" layer="19" extent="1-1"/>
-<wire x1="-63.5" y1="135.89" x2="-63.5" y2="125.73" width="0" layer="19" extent="1-1"/>
-</signal>
-<signal name="N$62">
-<contactref element="U$1" pad="4"/>
-<contactref element="X7" pad="P$2"/>
-<contactref element="X14" pad="P$2"/>
-<wire x1="-60.96" y1="125.73" x2="-99.06" y2="22.86" width="0" layer="19" extent="1-1"/>
-<wire x1="-60.96" y1="135.89" x2="-60.96" y2="125.73" width="0" layer="19" extent="1-1"/>
-</signal>
-<signal name="N$63">
-<contactref element="U$1" pad="5"/>
-<contactref element="X7" pad="P$3"/>
-<contactref element="X14" pad="P$3"/>
-<wire x1="-58.42" y1="125.73" x2="-58.42" y2="135.89" width="0" layer="19" extent="1-1"/>
-<wire x1="-86.36" y1="22.86" x2="-58.42" y2="125.73" width="0" layer="19" extent="1-1"/>
-</signal>
-<signal name="N$64">
-<contactref element="U$1" pad="6"/>
-<contactref element="X7" pad="P$4"/>
-<contactref element="X14" pad="P$4"/>
-<wire x1="-55.88" y1="125.73" x2="-55.88" y2="135.89" width="0" layer="19" extent="1-1"/>
-<wire x1="-86.36" y1="25.4" x2="-55.88" y2="125.73" width="0" layer="19" extent="1-1"/>
+<wire x1="-20.32" y1="125.73" x2="-129.54" y2="25.4" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$66">
 <contactref element="U$9" pad="P$1"/>
 <contactref element="U$10" pad="P$1"/>
 <contactref element="U$11" pad="P$1"/>
 <contactref element="JP8" pad="2"/>
-<wire x1="-52.07" y1="90.17" x2="-57.15" y2="156.21" width="0" layer="19" extent="1-1"/>
-<wire x1="-69.85" y1="90.17" x2="-52.07" y2="90.17" width="0" layer="19" extent="1-1"/>
-<wire x1="-87.63" y1="90.17" x2="-69.85" y2="90.17" width="0" layer="19" extent="1-1"/>
+<contactref element="U$1" pad="P$1"/>
+<contactref element="U$3" pad="P$1"/>
+<contactref element="U$12" pad="P$1"/>
+<wire x1="-142.24" y1="-100.33" x2="-142.24" y2="-110.49" width="0" layer="19" extent="1-1"/>
+<wire x1="-142.24" y1="-120.65" x2="-142.24" y2="-110.49" width="0" layer="19" extent="1-1"/>
+<wire x1="-87.63" y1="90.17" x2="-142.24" y2="-100.33" width="0" layer="19" extent="1-1"/>
+<wire x1="-69.85" y1="90.17" x2="-87.63" y2="90.17" width="0" layer="19" extent="1-1"/>
+<wire x1="-52.07" y1="90.17" x2="-69.85" y2="90.17" width="0" layer="19" extent="1-1"/>
+<wire x1="-57.15" y1="156.21" x2="-52.07" y2="90.17" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="+5V">
 <contactref element="JP8" pad="3"/>
-<contactref element="U$1" pad="7"/>
 <contactref element="U$6" pad="7"/>
 <contactref element="U$5" pad="7"/>
 <contactref element="U$4" pad="7"/>
-<contactref element="U$3" pad="7"/>
 <contactref element="U$7" pad="7"/>
 <contactref element="U$8" pad="7"/>
-<contactref element="JP7" pad="2"/>
-<contactref element="JP7" pad="6"/>
-<contactref element="JP7" pad="4"/>
-<contactref element="JP6" pad="2"/>
-<contactref element="JP6" pad="6"/>
-<contactref element="JP6" pad="4"/>
 <contactref element="JP5" pad="6"/>
 <contactref element="JP5" pad="2"/>
 <contactref element="JP5" pad="4"/>
@@ -2789,20 +2605,17 @@ These rules are the minimal specs we consider to be consistently etchable (i.e. 
 <contactref element="U$19" pad="OUT+"/>
 <contactref element="C13" pad="+"/>
 <contactref element="C15" pad="1"/>
-<contactref element="R8" pad="2"/>
 <contactref element="R9" pad="2"/>
 <contactref element="R11" pad="2"/>
 <contactref element="R12" pad="2"/>
 <wire x1="-143.51" y1="-74.93" x2="-143.51" y2="-81.28" width="0" layer="19" extent="1-1"/>
 <wire x1="-143.51" y1="-26.67" x2="-143.51" y2="-74.93" width="0" layer="19" extent="1-1"/>
 <wire x1="-129.54" y1="27.94" x2="-143.51" y2="-26.67" width="0" layer="19" extent="1-1"/>
-<wire x1="-107.95" y1="27.94" x2="-129.54" y2="27.94" width="0" layer="19" extent="1-1"/>
-<wire x1="-86.36" y1="27.94" x2="-107.95" y2="27.94" width="0" layer="19" extent="1-1"/>
-<wire x1="-83.82" y1="80.01" x2="-86.36" y2="27.94" width="0" layer="19" extent="1-1"/>
-<wire x1="-62.23" y1="80.01" x2="-83.82" y2="80.01" width="0" layer="19" extent="1-1"/>
-<wire x1="-40.64" y1="80.01" x2="-62.23" y2="80.01" width="0" layer="19" extent="1-1"/>
-<wire x1="-19.05" y1="80.01" x2="-40.64" y2="80.01" width="0" layer="19" extent="1-1"/>
-<wire x1="-62.23" y1="148.59" x2="-62.23" y2="80.01" width="0" layer="19" extent="1-1"/>
+<wire x1="83.82" y1="12.7" x2="-129.54" y2="27.94" width="0" layer="19" extent="1-1"/>
+<wire x1="110.49" y1="11.43" x2="83.82" y2="12.7" width="0" layer="19" extent="1-1"/>
+<wire x1="71.12" y1="1.27" x2="110.49" y2="11.43" width="0" layer="19" extent="1-1"/>
+<wire x1="-19.05" y1="80.01" x2="71.12" y2="1.27" width="0" layer="19" extent="1-1"/>
+<wire x1="-62.23" y1="148.59" x2="110.49" y2="11.43" width="0" layer="19" extent="1-1"/>
 <wire x1="-59.69" y1="148.59" x2="-62.23" y2="148.59" width="0" layer="19" extent="1-1"/>
 <wire x1="-64.77" y1="148.59" x2="-62.23" y2="148.59" width="0" layer="19" extent="1-1"/>
 <wire x1="-55.88" y1="148.59" x2="-59.69" y2="148.59" width="0" layer="19" extent="1-1"/>
@@ -2817,61 +2630,52 @@ These rules are the minimal specs we consider to be consistently etchable (i.e. 
 <wire x1="-86.36" y1="148.59" x2="-82.55" y2="148.59" width="0" layer="19" extent="1-1"/>
 <wire x1="-88.9" y1="148.59" x2="-86.36" y2="148.59" width="0" layer="19" extent="1-1"/>
 <wire x1="-91.44" y1="148.59" x2="-88.9" y2="148.59" width="0" layer="19" extent="1-1"/>
-<wire x1="-95.25" y1="148.59" x2="-91.44" y2="148.59" width="0" layer="19" extent="1-1"/>
-<wire x1="-97.79" y1="148.59" x2="-95.25" y2="148.59" width="0" layer="19" extent="1-1"/>
-<wire x1="-100.33" y1="148.59" x2="-97.79" y2="148.59" width="0" layer="19" extent="1-1"/>
-<wire x1="-104.14" y1="148.59" x2="-100.33" y2="148.59" width="0" layer="19" extent="1-1"/>
-<wire x1="-106.68" y1="148.59" x2="-104.14" y2="148.59" width="0" layer="19" extent="1-1"/>
-<wire x1="-109.22" y1="148.59" x2="-106.68" y2="148.59" width="0" layer="19" extent="1-1"/>
 <wire x1="-54.61" y1="156.21" x2="-55.88" y2="148.59" width="0" layer="19" extent="1-1"/>
-<wire x1="-54.61" y1="161.29" x2="-54.61" y2="156.21" width="0" layer="19" extent="1-1"/>
-<wire x1="-64.77" y1="161.29" x2="-54.61" y2="161.29" width="0" layer="19" extent="1-1"/>
-<wire x1="-95.25" y1="161.29" x2="-95.25" y2="148.59" width="0" layer="19" extent="1-1"/>
-<wire x1="-85.09" y1="161.29" x2="-95.25" y2="161.29" width="0" layer="19" extent="1-1"/>
+<wire x1="-64.77" y1="161.29" x2="-54.61" y2="156.21" width="0" layer="19" extent="1-1"/>
+<wire x1="-85.09" y1="161.29" x2="-86.36" y2="148.59" width="0" layer="19" extent="1-1"/>
+<wire x1="-95.25" y1="161.29" x2="-85.09" y2="161.29" width="0" layer="19" extent="1-1"/>
 </signal>
-<signal name="END_X">
+<signal name="X+">
 <contactref element="U$9" pad="P$2"/>
+<contactref element="U$2" pad="PE3"/>
+<wire x1="86.36" y1="25.4" x2="-49.53" y2="90.17" width="0" layer="19" extent="1-1"/>
 </signal>
-<signal name="END_Y">
+<signal name="X-">
 <contactref element="U$10" pad="P$2"/>
+<contactref element="U$2" pad="PE4"/>
+<wire x1="-67.31" y1="90.17" x2="76.2" y2="22.86" width="0" layer="19" extent="1-1"/>
 </signal>
-<signal name="END_Z">
+<signal name="Y+">
 <contactref element="U$11" pad="P$2"/>
-</signal>
-<signal name="TRM_E3">
-<contactref element="C11" pad="+"/>
-<contactref element="R8" pad="1"/>
-<contactref element="U$16" pad="P$2"/>
-<wire x1="-96.52" y1="154.94" x2="-62.23" y2="161.29" width="0" layer="19" extent="1-1"/>
-<wire x1="-43.18" y1="115.57" x2="-62.23" y2="161.29" width="0" layer="19" extent="1-1"/>
+<contactref element="U$2" pad="PE5"/>
+<wire x1="-85.09" y1="90.17" x2="78.74" y2="22.86" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="TRM_E2">
 <contactref element="C10" pad="+"/>
 <contactref element="R9" pad="1"/>
 <contactref element="U$15" pad="P$2"/>
+<contactref element="U$2" pad="PF1"/>
 <wire x1="-78.74" y1="154.94" x2="-72.39" y2="161.29" width="0" layer="19" extent="1-1"/>
 <wire x1="-25.4" y1="115.57" x2="-72.39" y2="161.29" width="0" layer="19" extent="1-1"/>
+<wire x1="88.9" y1="25.4" x2="-25.4" y2="115.57" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="TRM_BED">
 <contactref element="C8" pad="+"/>
 <contactref element="R12" pad="1"/>
 <contactref element="U$13" pad="P$2"/>
+<contactref element="U$2" pad="PD7"/>
 <wire x1="-105.41" y1="154.94" x2="-102.87" y2="161.29" width="0" layer="19" extent="1-1"/>
 <wire x1="-120.65" y1="90.17" x2="-105.41" y2="154.94" width="0" layer="19" extent="1-1"/>
+<wire x1="86.36" y1="66.04" x2="-120.65" y2="90.17" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="TRM_E1">
 <contactref element="C9" pad="+"/>
 <contactref element="R11" pad="1"/>
 <contactref element="U$14" pad="P$2"/>
+<contactref element="U$2" pad="PF0"/>
 <wire x1="-114.3" y1="154.94" x2="-92.71" y2="161.29" width="0" layer="19" extent="1-1"/>
 <wire x1="-138.43" y1="90.17" x2="-114.3" y2="154.94" width="0" layer="19" extent="1-1"/>
-</signal>
-<signal name="N$67">
-<contactref element="Q3" pad="2"/>
-<contactref element="X16" pad="P$4"/>
-<contactref element="X16" pad="P$3"/>
-<wire x1="-93.98" y1="135.89" x2="-127" y2="54.61" width="0" layer="19" extent="1-1"/>
-<wire x1="-91.44" y1="135.89" x2="-93.98" y2="135.89" width="0" layer="19" extent="1-1"/>
+<wire x1="73.66" y1="68.58" x2="-138.43" y2="90.17" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$69">
 <contactref element="Q4" pad="2"/>
@@ -2881,13 +2685,14 @@ These rules are the minimal specs we consider to be consistently etchable (i.e. 
 <wire x1="-73.66" y1="135.89" x2="-76.2" y2="135.89" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="Q_E2">
+<contactref element="U$2" pad="PD6"/>
 <contactref element="Q4" pad="1"/>
-</signal>
-<signal name="Q_E3">
-<contactref element="Q3" pad="1"/>
+<wire x1="83.82" y1="66.04" x2="-140.97" y2="54.61" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="Q_E1">
+<contactref element="U$2" pad="PD3"/>
 <contactref element="Q5" pad="1"/>
+<wire x1="78.74" y1="25.4" x2="-21.59" y2="88.9" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$76">
 <contactref element="Q6" pad="2"/>
@@ -2897,7 +2702,9 @@ These rules are the minimal specs we consider to be consistently etchable (i.e. 
 <wire x1="-30.48" y1="88.9" x2="-38.1" y2="146.05" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="Q_BED">
+<contactref element="U$2" pad="PD2"/>
 <contactref element="Q6" pad="1"/>
+<wire x1="76.2" y1="25.4" x2="-33.02" y2="88.9" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="+3V3">
 <contactref element="U$18" pad="OUT+"/>
@@ -2907,46 +2714,70 @@ These rules are the minimal specs we consider to be consistently etchable (i.e. 
 <wire x1="-143.51" y1="-11.43" x2="-143.51" y2="-86.36" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="STEP_X">
-<contactref element="U$1" pad="10"/>
+<contactref element="U$4" pad="10"/>
+<contactref element="U$2" pad="PD0"/>
+<wire x1="71.12" y1="25.4" x2="-142.24" y2="17.78" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="DIR_X">
-<contactref element="U$1" pad="9"/>
+<contactref element="U$4" pad="9"/>
+<contactref element="U$2" pad="PD1"/>
+<wire x1="73.66" y1="25.4" x2="-142.24" y2="20.32" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="STEP_Y">
-<contactref element="U$3" pad="10"/>
+<contactref element="U$5" pad="10"/>
+<contactref element="U$2" pad="PB6"/>
+<wire x1="81.28" y1="68.58" x2="-31.75" y2="69.85" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="DIR_Y">
-<contactref element="U$3" pad="9"/>
-</signal>
-<signal name="STEP_Z1">
-<contactref element="U$4" pad="10"/>
-</signal>
-<signal name="DIR_Z1">
-<contactref element="U$4" pad="9"/>
-</signal>
-<signal name="STEP_Z2">
-<contactref element="U$5" pad="10"/>
-</signal>
-<signal name="DIR_Z2">
 <contactref element="U$5" pad="9"/>
 </signal>
-<signal name="STEP_E1">
+<signal name="STEP_Z">
 <contactref element="U$6" pad="10"/>
+<contactref element="U$2" pad="PB4"/>
+<wire x1="60.96" y1="13.97" x2="81.28" y2="22.86" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="DIR_Z">
+<contactref element="U$6" pad="9"/>
+<contactref element="U$2" pad="PB5"/>
+<wire x1="63.5" y1="13.97" x2="68.58" y2="22.86" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="STEP_E1">
+<contactref element="U$7" pad="10"/>
+<contactref element="U$2" pad="PB2"/>
+<wire x1="68.58" y1="68.58" x2="120.65" y2="-1.27" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="DIR_E1">
-<contactref element="U$6" pad="9"/>
+<contactref element="U$7" pad="9"/>
+<contactref element="U$2" pad="PB3"/>
+<wire x1="71.12" y1="66.04" x2="118.11" y2="-1.27" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="STEP_E2">
-<contactref element="U$7" pad="10"/>
+<contactref element="U$8" pad="10"/>
+<contactref element="U$2" pad="PB0"/>
+<wire x1="93.98" y1="0" x2="71.12" y2="22.86" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="DIR_E2">
-<contactref element="U$7" pad="9"/>
-</signal>
-<signal name="STEP_E3">
-<contactref element="U$8" pad="10"/>
-</signal>
-<signal name="DIR_E3">
 <contactref element="U$8" pad="9"/>
+<contactref element="U$2" pad="PB1"/>
+<wire x1="91.44" y1="0" x2="73.66" y2="22.86" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="Y-">
+<contactref element="U$1" pad="P$2"/>
+<contactref element="U$2" pad="PF4"/>
+<wire x1="88.9" y1="66.04" x2="-139.7" y2="-100.33" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="Z+">
+<contactref element="U$3" pad="P$2"/>
+<contactref element="U$2" pad="PF3"/>
+<wire x1="68.58" y1="66.04" x2="-139.7" y2="-110.49" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="Z-">
+<contactref element="U$12" pad="P$2"/>
+<contactref element="U$2" pad="PF2"/>
+<wire x1="66.04" y1="66.04" x2="-139.7" y2="-120.65" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$27">
+<contactref element="U$2" pad="PB7"/>
 </signal>
 </signals>
 </board>
